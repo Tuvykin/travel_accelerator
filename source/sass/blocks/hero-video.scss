@@ -1,0 +1,37 @@
+.hero-video {
+  position: absolute;
+  right: 20px;
+  top: 329px;
+  width: 482px;
+  height: 317px;
+}
+
+.hero-video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  display: block;
+
+  &::after {
+    content: '';
+    border: 1px solid #fff;
+    width: 56px;
+    height: 56px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hero-video__button svg {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
