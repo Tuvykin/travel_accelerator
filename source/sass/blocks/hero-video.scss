@@ -1,9 +1,31 @@
 .hero-video {
   position: absolute;
-  right: 20px;
   top: 329px;
-  width: 482px;
-  height: 317px;
+  right: 20px;
+  max-width: 482px;
+  max-height: 317px;
+  background-color: $color-default-black;
+}
+
+.hero-video iframe {
+  border: none;
+}
+
+.hero-video__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 482px;
+  min-height: 317px;
+  transition: opacity 350ms ease-in;
+
+  &--del {
+    display: none;
+  }
+
+  &--hidden {
+    opacity: 0;
+  }
 }
 
 .hero-video__button {

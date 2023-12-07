@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>travel_accelerator</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -42,6 +42,7 @@
               </li>
             </ul>
             <a class="navigation__phone" href="tel:+78007253232">8 800 725-32-32</a>
+          </nav>
         </div>
       </header>
       <section class="hero">
@@ -70,31 +71,40 @@
                 <div class="hero__text-content">
                   <div class="hero__wrapper">
                     <div>
-                      <h2>Захватывающие вершины&nbsp;Кавказа</h2>
-                      <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на
+                      <!-- <h2>Захватывающие вершины&nbsp;Кавказа</h2> -->
+                      <h2>Захватывающие вершины&nbsp;Кавказа<br> и Северного<br> Урала</h2>
+                      <!-- <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на
                         вершину
-                        горы Чегет.</p>
+                        горы Чегет.</p> -->
+                      <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход
+                        на вершину горы Чегет.<br> Там вы встретите горных чаек и сможете попить чай.</p>
                       <a class="hero__button" href="#">Смотреть тур</a>
                     </div>
-                    <div class="hero__wrapper-video hero-video">
-                      <div class="hero-video__wrapper-image">
-                        <picture>
-                          <source type="image/webp" media="(max-width: 1239px)"
-                            srcset="img/picture/hero-video-tablet.webp 1x, img/picture/hero-video-tablet2x.webp 2x">
-                          <source type="image/webp"
-                            srcset="img/picture/hero-video.webp 1x, img/picture/hero-video2x.webp 2x">
-                          <source media="(max-width: 1239px)"
-                            srcset="img/picture/hero-video-tablet.jpg 1x, img/picture/hero-video-tablet2x.jpg 2x"
-                            width="442" height="300">
-                          <img src="img/picture/hero-video.jpg" srcset="img/picture/hero-video2x.jpg 2x" loading="lazy"
-                            alt="Путешественник на фоне вершины горы" width="482" height="317">
-                        </picture>
+                    <div class="hero__wrapper-video hero-video" data-hero-video>
+                      <iframe width="482" height="317" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen data-hero-iframe></iframe>
+                      <div class="hero-video__container" data-hero-poster>
+                        <div class="hero-video__wrapper-image">
+                          <picture>
+                            <source type="image/webp" media="(max-width: 1239px)"
+                              srcset="img/picture/hero-video-tablet.webp 1x, img/picture/hero-video-tablet2x.webp 2x">
+                            <source type="image/webp"
+                              srcset="img/picture/hero-video.webp 1x, img/picture/hero-video2x.webp 2x">
+                            <source media="(max-width: 1239px)"
+                              srcset="img/picture/hero-video-tablet.jpg 1x, img/picture/hero-video-tablet2x.jpg 2x"
+                              width="442" height="300">
+                            <img src="img/picture/hero-video.jpg" srcset="img/picture/hero-video2x.jpg 2x"
+                              loading="lazy" alt="Путешественник на фоне вершины горы" width="482" height="317">
+                          </picture>
+                        </div>
+                        <button class="hero-video__button btn" type="button" aria-label="Воспроизвести видео."
+                          data-hero-video-button>
+                          <svg width="12" height="22">
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
                       </div>
-                      <button class="hero-video__button btn" type="button" aria-label="Воспроизвести видео.">
-                        <svg width="12" height="22">
-                          <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                        </svg>
-                      </button>
                     </div>
                     <div class="hero__wrapper-description">
                       <ul class="hero__details-list">
@@ -218,11 +228,8 @@
                       <a class="hero__button" href="#">Смотреть тур</a>
                     </div>
                     <div class="hero__music hero-music">
-                      <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220"
-                        src="https://music.yandex.ru/iframe/track/119107082/25474374">Слушайте <a
-                          href='https://music.yandex.ru/album/25474374/track/119107082'>027. Быстрый Firefox, state of
-                          React и отладка в
-                          Node.js</a> на Яндекс Музыке</iframe>
+                      <iframe style="border:none;width:340px;height:220px;" width="340" height="220"
+                        src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
                     </div>
                     <div class="hero__wrapper-description">
                       <ul class="hero__details-list">
