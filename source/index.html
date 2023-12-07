@@ -12,40 +12,41 @@
 
 <body>
   <div class="wrapper">
-    <div>
-      <header class="main-header">
-        <div class="container main-header__container">
-          <nav class="navigation">
-            <a class="navigation__logo" aria-current="page">
-              <svg width="205" height="62">
-                <use xlink:href="img/sprite.svg#icon-logo"></use>
-              </svg>
-            </a>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Туры</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Обучение</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">О нас</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Отзывы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Фотографии</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <a class="navigation__phone" href="tel:+78007253232">8 800 725-32-32</a>
-          </nav>
-        </div>
-      </header>
+    <main>
+      <h1 class="visually-hidden">Путешествия</h1>
       <section class="hero">
+        <header class="main-header">
+          <div class="container main-header__container">
+            <nav class="navigation">
+              <a class="navigation__logo" aria-current="page">
+                <svg width="205" height="62">
+                  <use xlink:href="img/sprite.svg#icon-logo"></use>
+                </svg>
+              </a>
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Туры</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Обучение</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Отзывы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Фотографии</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <a class="navigation__phone" href="tel:+78007253232">8 800 725-32-32</a>
+            </nav>
+          </div>
+        </header>
         <div class="container hero__container">
           <div class="hero__swiper swiper" data-hero-swiper>
             <ul class="hero__list swiper-wrapper">
@@ -71,13 +72,13 @@
                 <div class="hero__text-content">
                   <div class="hero__wrapper">
                     <div>
-                      <!-- <h2>Захватывающие вершины&nbsp;Кавказа</h2> -->
-                      <h2>Захватывающие вершины&nbsp;Кавказа<br> и Северного<br> Урала</h2>
-                      <!-- <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на
+                      <h2>Захватывающие вершины&nbsp;Кавказа</h2>
+                      <!-- <h2>Захватывающие вершины&nbsp;Кавказа<br> и Северного<br> Урала</h2> -->
+                      <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на
                         вершину
-                        горы Чегет.</p> -->
-                      <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход
-                        на вершину горы Чегет.<br> Там вы встретите горных чаек и сможете попить чай.</p>
+                        горы Чегет.</p>
+                      <!-- <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход
+                              на вершину горы Чегет.<br> Там вы встретите горных чаек и сможете попить чай.</p> -->
                       <a class="hero__button" href="#">Смотреть тур</a>
                     </div>
                     <div class="hero__wrapper-video hero-video" data-hero-video>
@@ -255,9 +256,136 @@
           </div>
         </div>
       </section>
-    </div>
-    <main>
-      <h1 class="visually-hidden">Путешествия</h1>
+      <section class="tours">
+        <div class="tours__container container">
+          <h2>Ближайшие туры</h2>
+          <div class="tours__wrapper swiper">
+            <ul class="tours__list swiper-wrapper">
+              <li class="tours__item swiper-slide">
+                <div class="tours__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/tours-elbrus-mobile.webp 1x, img/picture/tours-elbrus-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/tours-elbrus-tablet.webp 1x, img/picture/tours-elbrus-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/tours-elbrus.webp 1x, img/picture/tours-elbrus2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/tours-elbrus-mobile.jpg 1x, img/picture/tours-elbrus-mobile2x.jpg 2x"
+                      width="320" height="416">
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/tours-elbrus-tablet.jpg 1x, img/picture/tours-elbrus-tablet2x.jpg 2x"
+                      width="330" height="416">
+                    <img src="img/picture/tours-elbrus.jpg" srcset="img/picture/tours-elbrus2x.jpg 2x" loading="lazy"
+                      alt="" width="380" height="416">
+                  </picture>
+                </div>
+                <div class="tours__wrapper-card tours-card">
+                  <h3>Путешествие
+                    вокруг&nbsp;Эльбруса</h3>
+                  <div class="tours-card__wrapper-info">
+                    <div class="tours-card__wrapper-place">
+                      <span>Кавказ</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-place"></use>
+                      </svg>
+                    </div>
+                    <div class="tours-card__group">
+                      <div class="tours-card__wrapper-days-night">
+                        <span>4 дня</span>
+                        <svg width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-days"></use>
+                        </svg>
+                      </div>
+                      <div class="tours-card__wrapper-days-night">
+                        <span>3 ночи</span>
+                        <svg width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-night"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tours-card__wrapper-details">
+                    <div class="tours-card__group">
+                      <span>Сложность:</span>
+                      <span class="visually-hidden">4 звезды</span>
+                    </div>
+                    <div class="tours-card__group">
+                      <span>Даты набора:</span>
+                      <span>12.06–19.06</span>
+                    </div>
+                    <div class="tours-card__group">
+                      <span>Группа:</span>
+                      <span>до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="tours__wrapper-card tours-card">
+                  <h3>Путешествие
+                    вокруг Эльбруса</h3>
+                  <div class="tours-card__wrapper-info">
+                    <span>Кавказ</span>
+                    <div class="tours-card__group">
+                      <span>4 дня</span>
+                      <span>3ночи</span>
+                    </div>
+                  </div>
+                  <div class="tours-card__wrapper-details">
+                    <div class="tours-card__group">
+                      <span>Сложность:</span>
+                      <span class="visually-hidden">4 звезды</span>
+                    </div>
+                    <div class="tours-card__group">
+                      <span>Даты набора:</span>
+                      <span>12.06–19.06</span>
+                    </div>
+                    <div class="tours-card__group">
+                      <span>Группа:</span>
+                      <span>до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="tours__wrapper-card tours-card">
+                  <h3>Путешествие
+                    вокруг Эльбруса</h3>
+                  <div class="tours-card__wrapper-info">
+                    <span>Кавказ</span>
+                    <div class="tours-card__group">
+                      <span>4 дня</span>
+                      <span>3ночи</span>
+                    </div>
+                  </div>
+                  <div class="tours-card__wrapper-details">
+                    <div class="tours-card__group">
+                      <span>Сложность:</span>
+                      <span class="visually-hidden">4 звезды</span>
+                    </div>
+                    <div class="tours-card__group">
+                      <span>Даты набора:</span>
+                      <span>12.06–19.06</span>
+                    </div>
+                    <div class="tours-card__group">
+                      <span>Группа:</span>
+                      <span>до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="tours__wrapper-button">
+              <button class="tours__button tours__button--prev swiper-button-prev" type="button"></button>
+              <button class="tours__button tours__button--next swiper-button-next" type="button"></button>
+            </div>
+          </div>
+          <a href="#">
+            <span>Показать все туры</span>
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container"></div>

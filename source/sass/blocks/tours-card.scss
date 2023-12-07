@@ -1,0 +1,44 @@
+.tours-card {
+  padding: 30px 20px;
+  max-width: 380px;
+  min-height: 416px;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.tours-card h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.tours-card__wrapper-info,
+.tours-card__wrapper-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tours-card__wrapper-place {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #0266C1;
+  align-items: center;
+}
+
+.tours-card__group {
+  display: flex;
+  gap: 14px;
+}
+
+.tours-card__wrapper-days-night {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+  align-items: center;
+}
