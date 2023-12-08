@@ -16,21 +16,22 @@
   line-height: 28px;
 }
 
-.tours-card__wrapper-info {
+.tours-card__wrapper {
   display: flex;
   justify-content: space-between;
   order: -1;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
-}
 
-.tours-card__wrapper-details {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 12px;
+  &--info {
+    order: -1;
+  }
+
+  &--details {
+    font-weight: 300;
+    order: 0;
+  }
 }
 
 .tours-card__wrapper-place {
@@ -41,12 +42,6 @@
   background-color: #0266C1;
   align-items: center;
 }
-
-// .tours-card__wrapper-place span {
-//   font-size: 12px;
-//   font-weight: 500;
-//   line-height: 12px;
-// }
 
 .tours-card__group {
   display: flex;

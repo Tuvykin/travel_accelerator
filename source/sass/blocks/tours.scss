@@ -12,6 +12,19 @@
   font-weight: 800;
   line-height: 35px;
   color: #2D383F;
+  position: relative;
+
+  &::before {
+    content: 'Ближайшие туры';
+    display: block;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    color: #2D383F;
+    position: absolute;
+    top: -16px;
+    z-index: -1;
+  }
 }
 
 .tours__list {
@@ -49,4 +62,17 @@
   &--next {
     background-color: #999;
   }
+}
+
+.tours__link {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  color: #2D383F;
+  margin: 0 auto;
+  align-items: center;
 }

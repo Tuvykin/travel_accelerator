@@ -283,7 +283,7 @@
                 <div class="tours__wrapper-card tours-card">
                   <h3>Путешествие
                     вокруг&nbsp;Эльбруса</h3>
-                  <div class="tours-card__wrapper-info">
+                  <div class="tours-card__wrapper tours-card__wrapper--info">
                     <div class="tours-card__wrapper-place">
                       <span>Кавказ</span>
                       <svg width="16" height="16">
@@ -305,13 +305,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tours-card__wrapper-details">
+                  <div class="tours-card__wrapper tours-card__wrapper--details">
                     <div class="tours-card__group-details">
                       <span>Сложность:</span>
-                      <div class="tours-card__wrapper-stars tours-stars tours-stars--4">
+                      <div class="tours-card__wrapper-stars">
                         <span class="visually-hidden">4 звезды</span>
-                        <svg width="16" height="16">
-                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        <svg width="84" height="16">
+                          <use xlink:href="img/sprite.svg#icon-stars-4"></use>
                         </svg>
                       </div>
                     </div>
@@ -348,7 +348,7 @@
                 <div class="tours__wrapper-card tours-card">
                   <h3>Путь к подножию
                     Белухи</h3>
-                  <div class="tours-card__wrapper-info">
+                  <div class="tours-card__wrapper tours-card__wrapper--info">
                     <div class="tours-card__wrapper-place">
                       <span>Алтай</span>
                       <svg width="16" height="16">
@@ -370,13 +370,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tours-card__wrapper-details">
+                  <div class="tours-card__wrapper tours-card__wrapper--details">
                     <div class="tours-card__group-details">
                       <span>Сложность:</span>
-                      <div class="tours-card__wrapper-stars tours-stars tours-stars--3">
+                      <div class="tours-card__wrapper-stars">
                         <span class="visually-hidden">3 звезды</span>
-                        <svg width="16" height="16">
-                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        <svg width="84" height="16">
+                          <use xlink:href="img/sprite.svg#icon-stars-3"></use>
                         </svg>
                       </div>
                     </div>
@@ -434,13 +434,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tours-card__wrapper-details">
+                  <div class="tours-card__wrapper tours-card__wrapper--details">
                     <div class="tours-card__group-details">
                       <span>Сложность:</span>
-                      <div class="tours-card__wrapper-stars tours-stars tours-stars--4">
+                      <div class="tours-card__wrapper-stars">
                         <span class="visually-hidden">4 звезды</span>
-                        <svg width="16" height="16">
-                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        <svg width="84" height="16">
+                          <use xlink:href="img/sprite.svg#icon-stars-4"></use>
                         </svg>
                       </div>
                     </div>
@@ -461,8 +461,11 @@
             <button class="tours__button tours__button--prev btn swiper-button-prev" type="button"></button>
             <button class="tours__button tours__button--next btn swiper-button-next" type="button"></button>
           </div>
-          <a href="#">
-            <span>Показать все туры</span>
+          <a class="tours__link" href="#">
+            <span class="tours__link-text">Показать все туры</span>
+            <svg width="6" height="12">
+              <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+            </svg>
           </a>
         </div>
       </section>
