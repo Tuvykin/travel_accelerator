@@ -96,7 +96,7 @@
                               srcset="img/picture/hero-video-tablet.jpg 1x, img/picture/hero-video-tablet2x.jpg 2x"
                               width="442" height="300">
                             <img src="img/picture/hero-video.jpg" srcset="img/picture/hero-video2x.jpg 2x"
-                              loading="lazy" alt="Путешественник на фоне вершины горы" width="482" height="317">
+                              loading="lazy" alt="Путешественник на вершине горы." width="482" height="317">
                           </picture>
                         </div>
                         <button class="hero-video__button btn" type="button" aria-label="Воспроизвести видео."
@@ -165,7 +165,7 @@
                             srcset="img/picture/hero-card-1-tablet.png 1x, img/picture/hero-card-1-tablet2x.png 2x"
                             width="266" height="351">
                           <img src="img/picture/hero-card-1.png" srcset="img/picture/hero-card-1-2x.png 2x"
-                            loading="lazy" alt="Озеро в горах" width="308" height="407">
+                            loading="lazy" alt="Озеро в горах." width="308" height="407">
                         </picture>
                       </div>
                       <div class="hero-cards__wrapper-image">
@@ -178,7 +178,7 @@
                             srcset="img/picture/hero-card-2-tablet.png 1x, img/picture/hero-card-2-tablet2x.png 2x"
                             width="236" height="312">
                           <img src="img/picture/hero-card-2.png" srcset="img/picture/hero-card-2-2x.png 2x"
-                            loading="lazy" alt="Девушка в горах" width="277" height="366">
+                            loading="lazy" alt="Девушка в горах." width="277" height="366">
                         </picture>
                       </div>
                     </div>
@@ -256,10 +256,10 @@
           </div>
         </div>
       </section>
-      <section class="tours">
+      <section class="tours" data-test=”tours”>
         <div class="tours__container container">
-          <h2>Ближайшие туры</h2>
-          <div class="tours__wrapper swiper">
+          <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__wrapper swiper" data-tours-swiper>
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item swiper-slide">
                 <div class="tours__wrapper-image">
@@ -329,25 +329,24 @@
               <li class="tours__item swiper-slide">
                 <div class="tours__wrapper-image">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/picture/tours-elbrus-mobile.webp 1x, img/picture/tours-elbrus-mobile2x.webp 2x">
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/tours-beluga-whale-mobile.webp 1x, img/picture/tours-beluga-whale-mobile2x.webp 2x"> -->
                     <source type="image/webp" media="(max-width: 1239px)"
-                      srcset="img/picture/tours-elbrus-tablet.webp 1x, img/picture/tours-elbrus-tablet2x.webp 2x">
+                      srcset="img/picture/tours-beluga-whale-tablet.webp 1x, img/picture/tours-beluga-whale-tablet2x.webp 2x">
                     <source type="image/webp"
-                      srcset="img/picture/tours-elbrus.webp 1x, img/picture/tours-elbrus2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/picture/tours-elbrus-mobile.jpg 1x, img/picture/tours-elbrus-mobile2x.jpg 2x"
-                      width="320" height="416">
+                      srcset="img/picture/tours-beluga-whale.webp 1x, img/picture/tours-beluga-whale2x.webp 2x">
+                    <!-- <source media="(max-width: 767px)"
+                      srcset="img/picture/tours-beluga-whale-mobile.jpg 1x, img/picture/tours-beluga-whale-mobile2x.jpg 2x"
+                      width="320" height="416"> -->
                     <source media="(max-width: 1239px)"
-                      srcset="img/picture/tours-elbrus-tablet.jpg 1x, img/picture/tours-elbrus-tablet2x.jpg 2x"
+                      srcset="img/picture/tours-beluga-whale-tablet.jpg 1x, img/picture/tours-beluga-whale-tablet2x.jpg 2x"
                       width="330" height="416">
-                    <img src="img/picture/tours-elbrus.jpg" srcset="img/picture/tours-elbrus2x.jpg 2x" loading="lazy"
-                      alt="" width="380" height="416">
+                    <img src="img/picture/tours-beluga-whale.jpg" srcset="img/picture/tours-beluga-whale2x.jpg 2x"
+                      loading="lazy" alt="" width="380" height="416">
                   </picture>
                 </div>
                 <div class="tours__wrapper-card tours-card">
-                  <h3>Путь к подножию
-                    Белухи</h3>
+                  <h3>Путь к подножию<br> Белухи</h3>
                   <div class="tours-card__wrapper tours-card__wrapper--info">
                     <div class="tours-card__wrapper-place">
                       <span>Алтай</span>
@@ -411,8 +410,8 @@
                   </picture>
                 </div>
                 <div class="tours__wrapper-card tours-card">
-                  <h3>Через Фишт к Чёрному морю и обратно</h3>
-                  <div class="tours-card__wrapper-info">
+                  <h3>Через Фишт<br> к Чёрному морю<br> и обратно</h3>
+                  <div class="tours-card__wrapper tours-card__wrapper--info">
                     <div class="tours-card__wrapper-place">
                       <span>Адыгея</span>
                       <svg width="16" height="16">
@@ -457,16 +456,65 @@
               </li>
             </ul>
           </div>
-          <div class="tours__wrapper-button">
-            <button class="tours__button tours__button--prev btn swiper-button-prev" type="button"></button>
-            <button class="tours__button tours__button--next btn swiper-button-next" type="button"></button>
-          </div>
+          <button class="tours__button tours__button--prev btn swiper-button-prev" type="button"
+            data-tours-swiper-btn-prev>
+            <span class="visually-hidden">Назад</span>
+            <svg width="5" height="7">
+              <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+            </svg>
+          </button>
+          <button class="tours__button tours__button--next btn swiper-button-next" type="button"
+            data-tours-swiper-btn-next>
+            <span class="visually-hidden">Вперед</span>
+            <svg width="5" height="7">
+              <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+            </svg>
+          </button>
           <a class="tours__link" href="#">
             <span class="tours__link-text">Показать все туры</span>
             <svg width="6" height="12">
               <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
             </svg>
           </a>
+        </div>
+      </section>
+      <section class="training" data-test=”training”>
+        <div class="tours__container container">
+          <div>
+            <h2>Обучение</h2>
+            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
+              Кавказа, Крыма,
+              Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          </div>
+          <div>
+            <h3>Наши инструкторы</h3>
+            <ul class="training__list">
+              <li class="training__item">
+                <div class="training__wrapper-image">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/training-alexander-mobile.webp 1x, img/picture/training-alexander-mobile2x.webp 2x"> -->
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/training-alexander-tablet.webp 1x, img/picture/training-alexander-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/training-alexander.webp 1x, img/picture/training-alexander2x.webp 2x">
+                    <!-- <source media="(max-width: 767px)"
+                      srcset="img/picture/training-alexander-mobile.jpg 1x, img/picture/training-alexander-mobile2x.jpg 2x"
+                      width="290" height="200"> -->
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/training-alexander-tablet.jpg 1x, img/picture/training-alexander-tablet2x.jpg 2x"
+                      width="182" height="200">
+                    <img src="img/picture/training-alexander.jpg" srcset="img/picture/training-alexander2x.jpg 2x"
+                      loading="lazy" alt="Фото инструктора Александр." width="255" height="200">
+                  </picture>
+                </div>
+                <div>
+                  <h4>Александр Прокофьев</h4>
+                </div>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
