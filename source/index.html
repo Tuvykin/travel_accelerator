@@ -479,18 +479,18 @@
         </div>
       </section>
       <section class="training" data-test=”training”>
-        <div class="tours__container container">
-          <div>
+        <div class="training__container container">
+          <div class="training__text-content">
             <h2>Обучение</h2>
-            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
+            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки<br> пройденных маршрутов
               Кавказа, Крыма,
               Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           </div>
-          <div>
+          <div class="training__wrapper instructors">
             <h3>Наши инструкторы</h3>
-            <ul class="training__list">
-              <li class="training__item">
-                <div class="training__wrapper-image">
+            <ul class="instructors__list">
+              <li class="instructors__item">
+                <div class="instructors__wrapper-image">
                   <picture>
                     <!-- <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/picture/training-alexander-mobile.webp 1x, img/picture/training-alexander-mobile2x.webp 2x"> -->
@@ -508,10 +508,139 @@
                       loading="lazy" alt="Фото инструктора Александр." width="255" height="200">
                   </picture>
                 </div>
-                <div>
-                  <h4>Александр Прокофьев</h4>
+                <div class="instructors__wrapper">
+                  <h4>Александр<br> Прокофьев</h4>
+                  <a class="instructors__link" href="#">
+                    <span class="visually-hidden">Вконтекте</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-training-vk"></use>
+                    </svg>
+                  </a>
                 </div>
-                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </li>
+              <li class="instructors__item">
+                <div class="instructors__wrapper-image">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+                                                    srcset="img/picture/training-svetlana-mobile.webp 1x, img/picture/training-svetlana-mobile2x.webp 2x"> -->
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/training-svetlana-tablet.webp 1x, img/picture/training-svetlana-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/training-svetlana.webp 1x, img/picture/training-svetlana2x.webp 2x">
+                    <!-- <source media="(max-width: 767px)"
+                                                    srcset="img/picture/training-svetlana-mobile.jpg 1x, img/picture/training-svetlana-mobile2x.jpg 2x"
+                                                    width="290" height="200"> -->
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/training-svetlana-tablet.jpg 1x, img/picture/training-svetlana-tablet2x.jpg 2x"
+                      width="182" height="200">
+                    <img src="img/picture/training-svetlana.jpg" srcset="img/picture/training-svetlana2x.jpg 2x"
+                      loading="lazy" alt="Фото инструктора Федор." width="255" height="200">
+                  </picture>
+                </div>
+                <div class="instructors__wrapper">
+                  <h4>Светлана<br> Афиногенова</h4>
+                  <a class="instructors__link" href="#">
+                    <span class="visually-hidden">Вконтекте</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-training-vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в
+                  этом назначение жизни.</p>
+              </li>
+              <li class="instructors__item">
+                <div class="instructors__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/training-nadezhda-mobile.webp 1x, img/picture/training-nadezhda-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/training-nadezhda-tablet.webp 1x, img/picture/training-nadezhda-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/training-nadezhda.webp 1x, img/picture/training-nadezhda2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/training-nadezhda-mobile.jpg 1x, img/picture/training-nadezhda-mobile2x.jpg 2x"
+                      width="290" height="200">
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/training-nadezhda-tablet.jpg 1x, img/picture/training-nadezhda-tablet2x.jpg 2x"
+                      width="182" height="200">
+                    <img src="img/picture/training-nadezhda.jpg" srcset="img/picture/training-nadezhda2x.jpg 2x"
+                      loading="lazy" alt="Фото инструктора Надежда." width="255" height="200">
+                  </picture>
+                </div>
+                <div class="instructors__wrapper">
+                  <h4>Надежда<br> Колесниченко</h4>
+                  <a class="instructors__link" href="#">
+                    <span class="visually-hidden">Вконтекте</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-training-vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                  спокойно
+                  и уверенно.</p>
+              </li>
+              <li class="instructors__item">
+                <div class="instructors__wrapper-image">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+                                    srcset="img/picture/training-fedor-mobile.webp 1x, img/picture/training-fedor-mobile2x.webp 2x"> -->
+                    <!-- <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/training-fedor-tablet.webp 1x, img/picture/training-fedor-tablet2x.webp 2x"> -->
+                    <source type="image/webp"
+                      srcset="img/picture/training-fedor.webp 1x, img/picture/training-fedor2x.webp 2x">
+                    <!-- <source media="(max-width: 767px)"
+                                    srcset="img/picture/training-fedor-mobile.jpg 1x, img/picture/training-fedor-mobile2x.jpg 2x"
+                                    width="290" height="200"> -->
+                    <!-- <source media="(max-width: 1239px)"
+                      srcset="img/picture/training-fedor-tablet.jpg 1x, img/picture/training-fedor-tablet2x.jpg 2x"
+                      width="182" height="200"> -->
+                    <img src="img/picture/training-fedor.jpg" srcset="img/picture/training-fedor2x.jpg 2x"
+                      loading="lazy" alt="Фото инструктора Федор." width="255" height="200">
+                  </picture>
+                </div>
+                <div class="instructors__wrapper">
+                  <h4>Федор<br> Кайгородов</h4>
+                  <a class="instructors__link" href="#">
+                    <span class="visually-hidden">Вконтекте</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-training-vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                  путешествует по Европе.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="training__wrapper">
+            <h3>Процесс обучения</h3>
+            <ul class="training__list">
+              <li class="training__item">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-training-map"></use>
+                </svg>
+                <p>Изучение спортивного туристского движения</p>
+              </li>
+              <li class="training__item">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-training-boots"></use>
+                </svg>
+                <p>Подготовка<br> и техническое снаряжение в походах</p>
+              </li>
+              <li class="training__item">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-training-pine-tree"></use>
+                </svg>
+                <p>Лекции<br> по окружающей среде, экологии и гигиене</p>
+              </li>
+              <li class="training__item">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-training-mountain"></use>
+                </svg>
+                <p>Разъяснение сложности горных препятствий</p>
               </li>
             </ul>
           </div>
