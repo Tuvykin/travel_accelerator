@@ -1,0 +1,34 @@
+.reviews-card {
+  display: flex;
+  gap: 30px;
+  color: #2D383F;
+  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
+  min-height: 293px;
+  max-width: 700px;
+  padding: 20px;
+  padding-right: 40px;
+}
+
+.reviews-card__text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 352px;
+}
+
+.reviews-card__text-content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.reviews-card__text-content h3 {
+  margin: 0;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.reviews-card__text-content span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
