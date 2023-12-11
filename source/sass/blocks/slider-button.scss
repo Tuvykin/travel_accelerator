@@ -1,0 +1,49 @@
+.slider-button {
+  width: 78px;
+  display: flex;
+  gap: 4px;
+}
+
+.slider-button__button {
+  width: 37px;
+  height: 35px;
+  background-color: #0266C1;
+  padding: 17px 12px;
+  color: $color-default-white;
+  position: relative;
+  margin: 0;
+
+  &--prev {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+  }
+
+  &--next {
+    background-color: #999;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    width: 13px;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+}
+
+.slider-button svg {
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}

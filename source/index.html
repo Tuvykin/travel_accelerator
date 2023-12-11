@@ -258,7 +258,25 @@
       </section>
       <section class="tours" data-test=”tours”>
         <div class="tours__container container">
-          <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__wrapper-slider">
+            <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
+            <div class="tours__wrapper-button slider-button">
+              <button class="slider-button__button slider-button__button--prev btn swiper-button-prev" type="button"
+                data-tours-swiper-btn-prev>
+                <span class="visually-hidden">Назад</span>
+                <svg width="5" height="7">
+                  <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+                </svg>
+              </button>
+              <button class="slider-button__button slider-button__button--next btn swiper-button-next" type="button"
+                data-tours-swiper-btn-next>
+                <span class="visually-hidden">Вперед</span>
+                <svg width="5" height="7">
+                  <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <div class="tours__wrapper swiper" data-tours-swiper>
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item swiper-slide">
@@ -456,20 +474,6 @@
               </li>
             </ul>
           </div>
-          <button class="tours__button tours__button--prev btn swiper-button-prev" type="button"
-            data-tours-swiper-btn-prev>
-            <span class="visually-hidden">Назад</span>
-            <svg width="5" height="7">
-              <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
-            </svg>
-          </button>
-          <button class="tours__button tours__button--next btn swiper-button-next" type="button"
-            data-tours-swiper-btn-next>
-            <span class="visually-hidden">Вперед</span>
-            <svg width="5" height="7">
-              <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
-            </svg>
-          </button>
           <a class="tours__link" href="#">
             <span class="tours__link-text">Показать все туры</span>
             <svg width="6" height="12">

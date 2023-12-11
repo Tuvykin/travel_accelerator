@@ -1,5 +1,5 @@
 .tours__container {
-  padding: 120px 20px 100px;
+  padding: 100px 20px;
   display: flex;
   flex-direction: column;
   gap: 53px;
@@ -13,6 +13,8 @@
   line-height: 35px;
   color: #2D383F;
   position: relative;
+  flex-grow: 1;
+  padding-top: 20px;
 
   &::before {
     content: attr(data-title);
@@ -22,7 +24,7 @@
     line-height: 55px;
     color: #2D383F;
     position: absolute;
-    top: -16px;
+    bottom: 0;
     z-index: -1;
     opacity: 0.03;
   }
@@ -44,48 +46,11 @@
   top: 0;
   left: 0;
   z-index: -1;
+  height: 100%;
 }
 
-.tours__button {
-  width: 37px;
-  height: 35px;
-  background-color: #0266C1;
-  padding: 17px 12px;
-  top: 142px;
-  left: auto;
-  color: $color-default-white;
-
-  &--prev {
-    right: 61px;
-    transform: rotate(180deg);
-  }
-
-  &--next {
-    background-color: #999;
-    right: 20px;
-  }
-
-  &::after {
-    display: none;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 17px;
-    left: 12px;
-    width: 13px;
-    height: 1px;
-    background-color: $color-default-white;
-  }
-}
-
-.tours__button svg {
-  position: absolute;
-  top: 50%;
-  left: 63%;
-  transform: translate(-50%, -50%);
+.tours__wrapper-image img {
+  height: 100%;
 }
 
 .tours__link {
@@ -99,4 +64,10 @@
   color: #2D383F;
   margin: 0 auto;
   align-items: center;
+}
+
+
+.tours__wrapper-slider {
+  display: flex;
+  align-items: flex-end;
 }
