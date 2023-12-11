@@ -1,3 +1,7 @@
+.tours {
+  position: relative;
+}
+
 .tours__container {
   padding: 100px 20px;
   display: flex;
@@ -66,8 +70,14 @@
   align-items: center;
 }
 
-
 .tours__wrapper-slider {
   display: flex;
   align-items: flex-end;
+}
+
+.tours__wrapper-clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }

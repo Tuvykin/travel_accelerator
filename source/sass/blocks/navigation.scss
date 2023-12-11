@@ -14,16 +14,23 @@
 
 .navigation__list {
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  min-width: 652px;
+  max-width: 760px;
+}
+
+.navigation__item {
+  max-height: 16px;
 }
 
 .navigation__link {
   color: $color-default-white;
   line-height: 16px;
+  display: block;
 }
 
 .navigation__phone {

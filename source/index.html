@@ -14,7 +14,7 @@
   <div class="wrapper">
     <main>
       <h1 class="visually-hidden">Путешествия</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <header class="main-header">
           <div class="container main-header__container">
             <nav class="navigation">
@@ -256,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section class="tours" data-test=”tours”>
+      <section class="tours" data-test="tours">
         <div class="tours__container container">
           <div class="tours__wrapper-slider">
             <h2 data-title="Ближайшие туры">Ближайшие туры</h2>
@@ -411,19 +411,19 @@
               <li class="tours__item swiper-slide">
                 <div class="tours__wrapper-image">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/picture/tours-elbrus-mobile.webp 1x, img/picture/tours-elbrus-mobile2x.webp 2x">
+                    <!-- <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/tours-fisht-mobile.webp 1x, img/picture/tours-fisht-mobile2x.webp 2x">
                     <source type="image/webp" media="(max-width: 1239px)"
-                      srcset="img/picture/tours-elbrus-tablet.webp 1x, img/picture/tours-elbrus-tablet2x.webp 2x">
+                      srcset="img/picture/tours-fisht-tablet.webp 1x, img/picture/tours-fisht-tablet2x.webp 2x"> -->
                     <source type="image/webp"
-                      srcset="img/picture/tours-elbrus.webp 1x, img/picture/tours-elbrus2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="img/picture/tours-elbrus-mobile.jpg 1x, img/picture/tours-elbrus-mobile2x.jpg 2x"
+                      srcset="img/picture/tours-fisht.webp 1x, img/picture/tours-fisht2x.webp 2x">
+                    <!-- <source media="(max-width: 767px)"
+                      srcset="img/picture/tours-fisht-mobile.jpg 1x, img/picture/tours-fisht-mobile2x.jpg 2x"
                       width="320" height="416">
                     <source media="(max-width: 1239px)"
-                      srcset="img/picture/tours-elbrus-tablet.jpg 1x, img/picture/tours-elbrus-tablet2x.jpg 2x"
-                      width="330" height="416">
-                    <img src="img/picture/tours-elbrus.jpg" srcset="img/picture/tours-elbrus2x.jpg 2x" loading="lazy"
+                      srcset="img/picture/tours-fisht-tablet.jpg 1x, img/picture/tours-fisht-tablet2x.jpg 2x"
+                    width="330" height="416"> -->
+                    <img src="img/picture/tours-fisht.jpg" srcset="img/picture/tours-fisht2x.jpg 2x" loading="lazy"
                       alt="" width="380" height="416">
                   </picture>
                 </div>
@@ -481,17 +481,50 @@
             </svg>
           </a>
         </div>
+        <div class="tours__wrapper-clouds">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/picture/clouds-mobile.webp 1x, img/picture/clouds-mobile2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1239px)"
+              srcset="img/picture/clouds-tablet.webp 1x, img/picture/clouds-tablet2x.webp 2x">
+            <source type="image/webp" srcset="img/picture/clouds.webp 1x, img/picture/clouds2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="img/picture/clouds-mobile.jpg 1x, img/picture/clouds-mobile2x.jpg 2x" width="346" height="595">
+            <source media="(max-width: 1239px)"
+              srcset="img/picture/clouds-tablet.jpg 1x, img/picture/clouds-tablet2x.jpg 2x" width="602" height="1364">
+            <img src="img/picture/clouds.jpg" srcset="img/picture/clouds2x.jpg 2x" loading="lazy" alt="" width="602"
+              height="1630">
+          </picture>
+        </div>
       </section>
-      <section class="training" data-test=”training”>
+      <section class="training" data-test="training">
         <div class="training__container container">
           <div class="training__text-content">
-            <h2>Обучение</h2>
+            <h2 data-title="Обучение">Обучение</h2>
             <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки<br> пройденных маршрутов
               Кавказа, Крыма,
               Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           </div>
           <div class="training__wrapper instructors">
-            <h3>Наши инструкторы</h3>
+            <div class="training__wrapper-slider">
+              <h3>Наши инструкторы</h3>
+              <div class="training__wrapper-button slider-button">
+                <button class="slider-button__button slider-button__button--prev btn swiper-button-prev" type="button"
+                  data-tours-swiper-btn-prev>
+                  <span class="visually-hidden">Назад</span>
+                  <svg width="5" height="7">
+                    <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+                  </svg>
+                </button>
+                <button class="slider-button__button slider-button__button--next btn swiper-button-next" type="button"
+                  data-tours-swiper-btn-next>
+                  <span class="visually-hidden">Вперед</span>
+                  <svg width="5" height="7">
+                    <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
             <ul class="instructors__list">
               <li class="instructors__item">
                 <div class="instructors__wrapper-image">
@@ -551,7 +584,9 @@
                     </svg>
                   </a>
                 </div>
-                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в
+                <p>Видеть мир вокруг, познавать<br> его опасности, находить друг друга, становиться ближе, чувствовать
+                  —<br>
+                  в
                   этом назначение жизни.</p>
               </li>
               <li class="instructors__item">
@@ -582,7 +617,8 @@
                     </svg>
                   </a>
                 </div>
-                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                <p>Участники говорят, что Надежда ответственная, приятная в общении,<br> и в поездках с ней чувствуешь
+                  себя
                   спокойно
                   и уверенно.</p>
               </li>
@@ -614,39 +650,77 @@
                     </svg>
                   </a>
                 </div>
-                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                <p>Опыт походов: Ходит в походы<br> с 2001 года. В России побывал в горных районах Хибины, Архыз, много
                   путешествует по Европе.</p>
               </li>
             </ul>
           </div>
-          <div class="training__wrapper">
-            <h3>Процесс обучения</h3>
-            <ul class="training__list">
-              <li class="training__item">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#icon-training-map"></use>
-                </svg>
-                <p>Изучение спортивного туристского движения</p>
-              </li>
-              <li class="training__item">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#icon-training-boots"></use>
-                </svg>
-                <p>Подготовка<br> и техническое снаряжение в походах</p>
-              </li>
-              <li class="training__item">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#icon-training-pine-tree"></use>
-                </svg>
-                <p>Лекции<br> по окружающей среде, экологии и гигиене</p>
-              </li>
-              <li class="training__item">
-                <svg width="25" height="25">
-                  <use xlink:href="img/sprite.svg#icon-training-mountain"></use>
-                </svg>
-                <p>Разъяснение сложности горных препятствий</p>
-              </li>
-            </ul>
+        </div>
+        <div class="training__wrapper">
+          <h3>Процесс обучения</h3>
+          <ul class="training__list">
+            <li class="training__item">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-training-map"></use>
+              </svg>
+              <p>Изучение спортивного туристского движения</p>
+            </li>
+            <li class="training__item">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-training-boots"></use>
+              </svg>
+              <p>Подготовка<br> и техническое снаряжение в походах</p>
+            </li>
+            <li class="training__item">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-training-pine-tree"></use>
+              </svg>
+              <p>Лекции<br> по окружающей среде, экологии и гигиене</p>
+            </li>
+            <li class="training__item">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-training-mountain"></use>
+              </svg>
+              <p>Разъяснение сложности горных препятствий</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" data-test="about">
+        <div class="about__container container">
+          <h2>О нас</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <h3>История компании</h3>
+              <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
+                понравилось,
+                что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям
+                удивительные места нашей
+                страны.</p>
+            </li>
+            <li class="about__item">
+              <h3>Наша цель</h3>
+              <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы.
+                При организации
+                мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в
+                приятной
+                компании.</p>
+            </li>
+          </ul>
+          <div class="about__wrapper-background-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/picture/about-mobile.webp 1x, img/picture/about-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1239px)"
+                srcset="img/picture/about-tablet.webp 1x, img/picture/about-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/picture/about.webp 1x, img/picture/about2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/picture/about-mobile.jpg 1x, img/picture/about-mobile2x.jpg 2x" width="434" height="400">
+              <source media="(max-width: 1239px)"
+                srcset="img/picture/about-tablet.jpg 1x, img/picture/about-tablet2x.jpg 2x" width="542" height="350">
+              <img src="img/picture/about.jpg" srcset="img/picture/about2x.jpg 2x" loading="lazy" alt="" width="808"
+                height="474">
+            </picture>
           </div>
         </div>
       </section>
