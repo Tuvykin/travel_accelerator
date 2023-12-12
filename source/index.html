@@ -730,7 +730,7 @@
       <section class="reviews" data-test="reviews">
         <div class="reviews__container container">
           <div class="reviews__wrapper">
-            <h2>Отзывы</h2>
+            <h2 data-title="Отзывы">Отзывы</h2>
             <div class="reviews__wrapper-button slider-button">
               <button class="slider-button__button slider-button__button--prev btn swiper-button-prev" type="button"
                 data-tours-swiper-btn-prev>
@@ -748,137 +748,140 @@
               </button>
             </div>
           </div>
-          <ul class="reviews__list">
-            <li class="reviews__item reviews-card">
-              <div class="reviews-card__wrapper-image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/picture/reviews-alexander-mobile.webp 1x, img/picture/reviews-alexander-mobile2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-alexander-tablet.webp 1x, img/picture/reviews-alexander-tablet2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/picture/reviews-alexander.webp 1x, img/picture/reviews-alexander2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/picture/reviews-alexander-mobile.jpg 1x, img/picture/reviews-alexander-mobile2x.jpg 2x"
-                    width="280" height="169">
-                  <source media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-alexander-tablet.jpg 1x, img/picture/reviews-alexander-tablet2x.jpg 2x"
-                    width="186" height="237">
-                  <img src="img/picture/reviews-alexander.jpg" srcset="img/picture/reviews-alexander2x.jpg 2x"
-                    loading="lazy" alt="Фото Александра." width="258" height="253">
-                </picture>
-              </div>
-              <div class="reviews-card__text-content">
-                <div class="reviews-card__group">
-                  <h3>Фролов Александр</h3>
-                  <span>38 лет, Москва</span>
+          <div class="reviews__swiper swiper" data-reviews-swiper>
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item reviews-card swiper-slide">
+                <div class="reviews-card__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/reviews-alexander-mobile.webp 1x, img/picture/reviews-alexander-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-alexander-tablet.webp 1x, img/picture/reviews-alexander-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/reviews-alexander.webp 1x, img/picture/reviews-alexander2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/reviews-alexander-mobile.jpg 1x, img/picture/reviews-alexander-mobile2x.jpg 2x"
+                      width="280" height="169">
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-alexander-tablet.jpg 1x, img/picture/reviews-alexander-tablet2x.jpg 2x"
+                      width="186" height="237">
+                    <img src="img/picture/reviews-alexander.jpg" srcset="img/picture/reviews-alexander2x.jpg 2x"
+                      loading="lazy" alt="Фото Александра." width="258" height="253">
+                  </picture>
                 </div>
-                <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты
-                  — всему научили,
-                  все показали. Делились увлекательными историями о местах, людях, культуре места.
-                  С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так
-                  душой и телом. Всем
-                  очень рекомендую!</p>
-              </div>
-            </li>
-            <li class="reviews__item reviews-card">
-              <div class="reviews-card__wrapper-image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/picture/reviews-ivan-mobile.webp 1x, img/picture/reviews-ivan-mobile2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-ivan-tablet.webp 1x, img/picture/reviews-ivan-tablet2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/picture/reviews-ivan.webp 1x, img/picture/reviews-ivan2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/picture/reviews-ivan-mobile.jpg 1x, img/picture/reviews-ivan-mobile2x.jpg 2x"
-                    width="280" height="169">
-                  <source media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-ivan-tablet.jpg 1x, img/picture/reviews-ivan-tablet2x.jpg 2x"
-                    width="186" height="237">
-                  <img src="img/picture/reviews-ivan.jpg" srcset="img/picture/reviews-ivan2x.jpg 2x" loading="lazy"
-                    alt="Фото Александра." width="258" height="253">
-                </picture>
-              </div>
-              <div class="reviews-card__text-content">
-                <div class="reviews-card__group">
-                  <h3>Иван Соловьёв</h3>
-                  <span>25 лет, Владивосток</span>
+                <div class="reviews-card__text-content">
+                  <div class="reviews-card__group">
+                    <h3>Фролов Александр</h3>
+                    <span>38 лет, Москва</span>
+                  </div>
+                  <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие
+                    эксперты
+                    — всему научили,
+                    все показали. Делились увлекательными историями о местах, людях, культуре места.
+                    С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так
+                    душой и телом. Всем
+                    очень рекомендую!</p>
                 </div>
-                <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
-                  мимо
-                  полигона,
-                  по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
-                  Было очень интересно!
-                  Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
-                  Всем советую этот тур.</p>
-              </div>
-            </li>
-            <li class="reviews__item reviews-card">
-              <div class="reviews-card__wrapper-image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/picture/reviews-ivan-mobile.webp 1x, img/picture/reviews-ivan-mobile2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-ivan-tablet.webp 1x, img/picture/reviews-ivan-tablet2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/picture/reviews-ivan.webp 1x, img/picture/reviews-ivan2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/picture/reviews-ivan-mobile.jpg 1x, img/picture/reviews-ivan-mobile2x.jpg 2x"
-                    width="280" height="169">
-                  <source media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-ivan-tablet.jpg 1x, img/picture/reviews-ivan-tablet2x.jpg 2x"
-                    width="186" height="237">
-                  <img src="img/picture/reviews-ivan.jpg" srcset="img/picture/reviews-ivan2x.jpg 2x" loading="lazy"
-                    alt="Фото Александра." width="258" height="253">
-                </picture>
-              </div>
-              <div class="reviews-card__text-content">
-                <div class="reviews-card__group">
-                  <h3>Евгения Баженова</h3>
-                  <span>23 года, Кострома</span>
+              </li>
+              <li class="reviews__item reviews-card swiper-slide">
+                <div class="reviews-card__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/reviews-ivan-mobile.webp 1x, img/picture/reviews-ivan-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-ivan-tablet.webp 1x, img/picture/reviews-ivan-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/reviews-ivan.webp 1x, img/picture/reviews-ivan2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/reviews-ivan-mobile.jpg 1x, img/picture/reviews-ivan-mobile2x.jpg 2x"
+                      width="280" height="169">
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-ivan-tablet.jpg 1x, img/picture/reviews-ivan-tablet2x.jpg 2x"
+                      width="186" height="237">
+                    <img src="img/picture/reviews-ivan.jpg" srcset="img/picture/reviews-ivan2x.jpg 2x" loading="lazy"
+                      alt="Фото Иван." width="258" height="253">
+                  </picture>
                 </div>
-                <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на
-                  18 км, поэтому
-                  не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо
-                  организм уже привык.
-                  Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
-              </div>
-            </li>
-            <li class="reviews__item reviews-card">
-              <div class="reviews-card__wrapper-image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/picture/reviews-ivan-mobile.webp 1x, img/picture/reviews-ivan-mobile2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-ivan-tablet.webp 1x, img/picture/reviews-ivan-tablet2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/picture/reviews-ivan.webp 1x, img/picture/reviews-ivan2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/picture/reviews-ivan-mobile.jpg 1x, img/picture/reviews-ivan-mobile2x.jpg 2x"
-                    width="280" height="169">
-                  <source media="(max-width: 1239px)"
-                    srcset="img/picture/reviews-ivan-tablet.jpg 1x, img/picture/reviews-ivan-tablet2x.jpg 2x"
-                    width="186" height="237">
-                  <img src="img/picture/reviews-ivan.jpg" srcset="img/picture/reviews-ivan2x.jpg 2x" loading="lazy"
-                    alt="Фото Александра." width="258" height="253">
-                </picture>
-              </div>
-              <div class="reviews-card__text-content">
-                <div class="reviews-card__group">
-                  <h3>Иван Соловьёв</h3>
-                  <span>25 лет, Владивосток</span>
+                <div class="reviews-card__text-content">
+                  <div class="reviews-card__group">
+                    <h3>Иван Соловьёв</h3>
+                    <span>25 лет, Владивосток</span>
+                  </div>
+                  <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
+                    мимо
+                    полигона,
+                    по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                    Было очень интересно!
+                    Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
+                    Всем советую этот тур.</p>
                 </div>
-                <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
-                  мимо
-                  полигона,
-                  по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
-                  Было очень интересно!
-                  Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
-                  Всем советую этот тур.</p>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="reviews__item reviews-card swiper-slide">
+                <div class="reviews-card__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/reviews-evgenia-mobile.webp 1x, img/picture/reviews-evgenia-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-evgenia-tablet.webp 1x, img/picture/reviews-evgenia-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/reviews-evgenia.webp 1x, img/picture/reviews-evgenia2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/reviews-evgenia-mobile.jpg 1x, img/picture/reviews-evgenia-mobile2x.jpg 2x"
+                      width="280" height="169">
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-evgenia-tablet.jpg 1x, img/picture/reviews-evgenia-tablet2x.jpg 2x"
+                      width="186" height="237">
+                    <img src="img/picture/reviews-evgenia.jpg" srcset="img/picture/reviews-evgenia2x.jpg 2x"
+                      loading="lazy" alt="Фото Евгения." width="258" height="253">
+                  </picture>
+                </div>
+                <div class="reviews-card__text-content">
+                  <div class="reviews-card__group">
+                    <h3>Евгения Баженова</h3>
+                    <span>23 года, Кострома</span>
+                  </div>
+                  <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на
+                    18 км, поэтому
+                    не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо
+                    организм уже привык.
+                    Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
+                </div>
+              </li>
+              <li class="reviews__item reviews-card swiper-slide">
+                <div class="reviews-card__wrapper-image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/picture/reviews-elena-mobile.webp 1x, img/picture/reviews-elena-mobile2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-elena-tablet.webp 1x, img/picture/reviews-elena-tablet2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/picture/reviews-elena.webp 1x, img/picture/reviews-elena2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/picture/reviews-elena-mobile.jpg 1x, img/picture/reviews-elena-mobile2x.jpg 2x"
+                      width="280" height="169">
+                    <source media="(max-width: 1239px)"
+                      srcset="img/picture/reviews-elena-tablet.jpg 1x, img/picture/reviews-elena-tablet2x.jpg 2x"
+                      width="186" height="237">
+                    <img src="img/picture/reviews-elena.jpg" srcset="img/picture/reviews-elena2x.jpg 2x" loading="lazy"
+                      alt="Фото Елена." width="258" height="253">
+                  </picture>
+                </div>
+                <div class="reviews-card__text-content">
+                  <div class="reviews-card__group">
+                    <h3>Елена Пирогова</h3>
+                    <span>37 лет, Тюмень</span>
+                  </div>
+                  <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
+                    наконец‑то,
+                    преодолев все трудности и препятствия, взбираешься на вершину.
+                    У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у
+                    костра
+                    и пели песни.
+                    Обязательно повторю такое приключение!</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
