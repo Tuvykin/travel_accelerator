@@ -4,4 +4,10 @@
   height: 220px;
   top: 426px;
   right: 20px;
+
+  @include vp-1200 {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 267px;
+  }
 }

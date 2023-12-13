@@ -4,6 +4,16 @@
   top: 187px;
   width: 410px;
   height: 459px;
+
+  @include vp-1200 {
+    position: relative;
+    top: 0;
+    right: -50%;
+    transform: translate(-50%);
+    width: 442px;
+    height: 365px;
+    margin-bottom: 122px;
+  }
 }
 
 .hero-cards__wrapper-image {
