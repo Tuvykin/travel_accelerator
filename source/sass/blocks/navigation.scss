@@ -10,6 +10,12 @@
   width: 100%;
   left: 50%;
   transform: translate(-50%);
+
+  @include vp-1200 {
+    padding: 20px 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .navigation__list {
@@ -21,6 +27,10 @@
   gap: 30px;
   min-width: 652px;
   max-width: 760px;
+
+  @include vp-1200 {
+    display: none;
+  }
 }
 
 .navigation__item {
@@ -38,8 +48,35 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
+
+  @include vp-1200 {
+    text-align: right;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .navigation__logo {
-  height: 62px;
+  max-height: 62px;
+
+  @include vp-1200 {
+    max-height: 42px;
+    text-align: center;
+  }
+}
+
+.navigation__logo svg {
+  @include vp-1200 {
+    width: 142px;
+    height: 42px;
+  }
+}
+
+.navigation__toogle {
+  display: none;
+
+  @include vp-1200 {
+    display: block;
+    text-align: left;
+  }
 }

@@ -16,8 +16,14 @@
       <h1 class="visually-hidden">Путешествия</h1>
       <section class="hero" data-test="hero">
         <header class="main-header">
-          <div class="container main-header__container">
+          <div class="main-header__container container">
             <nav class="navigation">
+              <button class="navigation__toogle btn" type="button">
+                <span class="visually-hidden">Меню</span>
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#icon-menu"></use>
+                </svg>
+              </button>
               <a class="navigation__logo" aria-current="page">
                 <svg width="205" height="62">
                   <use xlink:href="img/sprite.svg#icon-logo"></use>
@@ -71,14 +77,11 @@
                 </div>
                 <div class="hero__text-content">
                   <div class="hero__wrapper">
-                    <div>
+                    <div class="hero__group">
                       <h2>Захватывающие вершины&nbsp;Кавказа</h2>
-                      <!-- <h2>Захватывающие вершины&nbsp;Кавказа<br> и Северного<br> Урала</h2> -->
                       <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на
                         вершину
                         горы Чегет.</p>
-                      <!-- <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход
-                              на вершину горы Чегет.<br> Там вы встретите горных чаек и сможете попить чай.</p> -->
                       <a class="hero__button" href="#">Смотреть тур</a>
                     </div>
                     <div class="hero__wrapper-video hero-video" data-hero-video>
@@ -667,7 +670,7 @@
             </li>
             <li class="training__item">
               <svg width="25" height="25">
-                <use xlink:href="img/sprite.svg#icon-training-boots"></use>
+                <use xlink:href="img/sprite.svg#icon-boots"></use>
               </svg>
               <p>Подготовка<br> и техническое снаряжение в походах</p>
             </li>
@@ -881,6 +884,100 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" data-test="adv">
+        <div class="advantages__container container">
+          <h2 data-title="Преимущества">Преимущества</h2>
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <div class="advantages__text-content">
+                  <h3>Безопасность</h3>
+                  <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем
+                    планы действий на
+                    случай непредвиденных обстоятельств и даем гарантию полной безопасности во время всего тура.</p>
+                </div>
+                <div class="advantages__wrapper-image">
+                  <svg width="22" height="22">
+                    <use xlink:href="img/sprite.svg#icon-advantages-safety"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-content">
+                  <h3>Экспертиза и знания</h3>
+                  <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
+                    безопасности. Это гарантирует,
+                    что наши клиенты находятся в надежных руках и могут в полной мере насладиться опытом без опасений.
+                  </p>
+                </div>
+                <div class="advantages__wrapper-image">
+                  <svg width="22" height="22">
+                    <use xlink:href="img/sprite.svg#icon-advantages-crown"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-content">
+                  <h3>Оборудование и снаряжение</h3>
+                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
+                    клиентов от
+                    необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и
+                    экономически
+                    выгодным.</p>
+                </div>
+                <div class="advantages__wrapper-image">
+                  <svg width="22" height="22">
+                    <use xlink:href="img/sprite.svg#icon-boots"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-content">
+                  <h3>Индивидуальные маршруты</h3>
+                  <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
+                    адаптировать
+                    маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+                </div>
+                <div class="advantages__wrapper-image">
+                  <svg width="22" height="22">
+                    <use xlink:href="img/sprite.svg#icon-advantages-path"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-content">
+                  <h3>Бережное отношение к природе</h3>
+                  <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают
+                    минимальное
+                    воздействие на
+                    природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+                </div>
+                <div class="advantages__wrapper-image">
+                  <svg width="22" height="22">
+                    <use xlink:href="img/sprite.svg#icon-advantages-leaf"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__wrapper-button slider-button">
+            <button class="slider-button__button slider-button__button--prev btn swiper-button-prev" type="button"
+              data-tours-swiper-btn-prev>
+              <span class="visually-hidden">Назад</span>
+              <svg width="5" height="7">
+                <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+              </svg>
+            </button>
+            <button class="slider-button__button slider-button__button--next btn swiper-button-next" type="button"
+              data-tours-swiper-btn-next>
+              <span class="visually-hidden">Вперед</span>
+              <svg width="5" height="7">
+                <use xlink:href="img/sprite.svg#icon-tours-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

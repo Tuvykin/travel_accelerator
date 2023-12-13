@@ -1,12 +1,12 @@
 .slider-button {
-  width: 78px;
+  max-width: 78px;
   display: flex;
   gap: 4px;
 }
 
 .slider-button__button {
-  width: 37px;
-  height: 35px;
+  min-width: 37px;
+  max-height: 35px;
   background-color: #0266C1;
   padding: 17px 12px;
   color: $color-default-white;
@@ -20,7 +20,6 @@
   }
 
   &--next {
-    background-color: #999;
     top: 0;
     right: 0;
   }

@@ -5,10 +5,25 @@
   max-width: 482px;
   max-height: 317px;
   background-color: $color-default-black;
+
+  @include vp-1200 {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 442px;
+    max-height: 300px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
 }
 
 .hero-video iframe {
   border: none;
+
+  @include vp-1200 {
+    max-width: 442px;
+    max-height: 300px;
+  }
 }
 
 .hero-video__container {
@@ -25,6 +40,11 @@
 
   &--hidden {
     opacity: 0;
+  }
+
+  @include vp-1200 {
+    min-width: 442px;
+    min-height: 300px;
   }
 }
 
