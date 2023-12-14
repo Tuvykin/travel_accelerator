@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initHeroSlider} from './modules/hero-swiper';
 import {setHeroVideo} from './modules/hero-video';
 import {initToursSlider} from './modules/tours-swiper';
+import {initTrainingSlider} from './modules/training-swiper';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
   setHeroVideo();
   initToursSlider();
+  initTrainingSlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

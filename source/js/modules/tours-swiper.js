@@ -14,13 +14,11 @@ export const initToursSlider = () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 18,
-        initialSlide: 1,
       },
       // when window width is >= 1200px
       1240: {
         slidesPerView: 3,
         spaceBetween: 30,
-        initialSlide: 3,
       },
     },
     navigation: {

@@ -9,12 +9,20 @@
   display: flex;
   flex-direction: column;
   gap: 56px;
+
+  @include vp-1200 {
+    gap: 25px;
+  }
 }
 
 .training__text-content {
   display: flex;
   flex-direction: column;
   gap: 37px;
+
+  @include vp-1200 {
+    gap: 26px;
+  }
 }
 
 .training__text-content h2 {
@@ -36,6 +44,25 @@
     bottom: 0;
     z-index: -1;
     opacity: 0.03;
+  }
+
+  @include vp-1200 {
+    font-size: 25px;
+    line-height: 25px;
+    padding-top: 15px;
+    padding-bottom: 0;
+
+    &::before {
+    content: attr(data-title);
+    display: block;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.03;
+    font-size: 40px;
+    line-height: 40px;
+  }
   }
 }
 
@@ -113,4 +140,9 @@
 .training__wrapper-slider {
   display: flex;
   align-items: flex-end;
+}
+
+.training__wrapper-swiper {
+  margin: 0;
+  max-width: 100%;
 }

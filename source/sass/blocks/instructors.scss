@@ -2,24 +2,31 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 100%;
+
+  @include vp-1200 {
+    gap: 30px;
+  }
 }
 
 .instructors__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  gap: 20px;
 }
 
 .instructors__item {
   padding: 14px;
-  max-width: 285px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   min-height: 356px;
   border: 1px solid rgba(2, 102, 193, 0.10);
+  background-color: $color-default-white;
+
+  @include vp-1200 {
+    min-width: 212px;
+  }
 }
 
 .instructors__wrapper {
