@@ -14,9 +14,9 @@ export const initToursSlider = () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 18,
-        initialSlide: 2,
+        initialSlide: 1,
       },
-      // when window width is >= 1366px
+      // when window width is >= 1200px
       1240: {
         slidesPerView: 3,
         spaceBetween: 30,

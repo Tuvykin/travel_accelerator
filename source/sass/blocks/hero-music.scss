@@ -10,4 +10,8 @@
     margin: 0 auto;
     margin-bottom: 267px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }

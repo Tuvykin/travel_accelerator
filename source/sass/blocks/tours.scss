@@ -8,6 +8,10 @@
   flex-direction: column;
   gap: 53px;
   position: relative;
+
+  @include vp-1200 {
+    padding: 45px;
+  }
 }
 
 .tours__container h2 {

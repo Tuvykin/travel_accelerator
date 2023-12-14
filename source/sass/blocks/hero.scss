@@ -46,6 +46,11 @@
     padding: 212px 45px 0;
     gap: 45px;
   }
+
+  @include vp-767 {
+    padding: 140px 15px 40px;
+    min-height: 568px;
+  }
 }
 
 .hero__text-content {
@@ -70,6 +75,11 @@
     line-height: 56px;
     margin-bottom: 15px;
   }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .hero__text-content p {
@@ -83,6 +93,13 @@
     margin: 0 auto;
     margin-bottom: 25px;
     max-width: 500px;
+  }
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 60px;
+    max-width: none;
   }
 }
 
@@ -120,4 +137,12 @@
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+
+.hero__text-content br {
+
+  @include vp-767 {
+    display: none;
+  }
 }
