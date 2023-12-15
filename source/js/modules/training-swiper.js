@@ -1,7 +1,7 @@
 export const initTrainingSlider = () => {
   const swiperWrapper = document.querySelector('[data-training-swiper]');
-  const buttonPrev = document.querySelector('[data-training-swiper-btn-prev]');
   const buttonNext = document.querySelector('[data-training-swiper-btn-next]');
+  const buttonPrev = document.querySelector('[data-training-swiper-btn-prev]');
 
   return new window.Swiper(swiperWrapper, {
     loop: false,

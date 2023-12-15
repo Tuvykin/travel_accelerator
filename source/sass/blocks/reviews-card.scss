@@ -10,14 +10,15 @@
 
 .reviews-card__text-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   max-width: 352px;
+  justify-content: space-between;
 }
 
 .reviews-card__text-content p {
   margin: 0;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .reviews-card__text-content h3 {
@@ -30,4 +31,10 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
+}
+
+.reviews-card__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

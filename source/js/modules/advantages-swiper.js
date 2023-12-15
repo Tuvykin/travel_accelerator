@@ -1,7 +1,7 @@
-export const initToursSlider = () => {
-  const swiperWrapper = document.querySelector('[data-tours-swiper]');
-  const buttonNext = document.querySelector('[data-tours-swiper-btn-next]');
-  const buttonPrev = document.querySelector('[data-tours-swiper-btn-prev]');
+export const initAdvantagesSlider = () => {
+  const swiperWrapper = document.querySelector('[data-advantages-swiper]');
+  const buttonNext = document.querySelector('[data-advantages-swiper-btn-next]');
+  const buttonPrev = document.querySelector('[data-advantages-swiper-btn-prev]');
 
   return new window.Swiper(swiperWrapper, {
     loop: false,
@@ -12,13 +12,14 @@ export const initToursSlider = () => {
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
       // when window width is >= 1200px
       1240: {
         slidesPerView: 3,
         spaceBetween: 30,
+        initialSlide: 2,
       },
     },
     navigation: {

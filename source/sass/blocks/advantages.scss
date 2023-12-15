@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 50px;
   align-items: center;
+  margin: 0;
+  padding: 42px 0 81px;
+  max-width: 100%;
 }
 
 .advantages__container h2 {
@@ -67,4 +70,11 @@
 
 .advantages__wrapper-image {
   color: #0266C1;
+  padding: 15px;
+  border: 1px solid #0266C1;
+  max-height: 54px;
+}
+
+.advantages__wrapper {
+  margin: 0;
 }
