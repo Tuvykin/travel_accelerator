@@ -10,7 +10,7 @@
   padding: 0;
 
   &:disabled {
-    opacity: 0.5;
     pointer-events: none;
+    background-color: #999;
   }
 }

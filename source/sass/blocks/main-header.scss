@@ -1,3 +1,7 @@
 .main-header__container {
   padding: 0;
+
+  @include vp-1200 {
+    padding: 0;
+  }
 }
