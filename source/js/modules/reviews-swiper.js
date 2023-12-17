@@ -21,7 +21,7 @@ export const initReviewsSlider = () => {
       1240: {
         slidesPerView: 1.6,
         spaceBetween: 120,
-        initialSlide: 1.6,
+        initialSlide: 1,
       },
     },
     navigation: {

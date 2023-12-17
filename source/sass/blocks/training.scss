@@ -5,8 +5,12 @@
   position: relative;
 
   @include vp-1200 {
-    gap: 25px;
+    gap: 27px;
     overflow: hidden;
+  }
+
+  @include vp-767 {
+    gap: 26px;
   }
 }
 
@@ -19,11 +23,13 @@
   @include vp-1200 {
     gap: 25px;
     padding: 45px;
+    padding-top: 48px;
     padding-bottom: 0;
   }
 
   @include vp-767 {
-    padding: 20px 15px 0;
+    padding: 21px 15px 0;
+    gap: 26px;
   }
 }
 
@@ -33,11 +39,13 @@
   gap: 37px;
 
   @include vp-1200 {
-    gap: 26px;
+    gap: 21px;
+    padding-bottom: 5px;
   }
 
   @include vp-767 {
-    gap: 18px;
+    gap: 16px;
+    padding-bottom: 2px;
   }
 }
 
@@ -107,12 +115,13 @@
     margin: 0;
     padding: 45px;
     padding-top: 0;
-    gap: 44px;
+    padding-bottom: 47px;
+    gap: 40px;
   }
 
   @include vp-767 {
-    padding: 0 15px 20px;
-    gap: 25px;
+    padding: 0 15px 21px;
+    gap: 23px;
   }
 }
 
@@ -213,11 +222,11 @@
 
     &::before {
       left: 0;
-      bottom: 0;
+      bottom: -2px;
     }
 
     &::after {
-      bottom: 6px;
+      bottom: 5px;
       left: 0;
       right: 0;
     }
@@ -229,11 +238,11 @@
       grid-row: 2 / 3;
 
       &::before {
-        top: 0;
+        top: 2px;
       }
 
       &::after {
-        top: 6px;
+        top: 9px;
       }
     }
 
@@ -243,7 +252,7 @@
       padding-top: 29px;
 
       &::before {
-        top: 0;
+        top: 2px;
       }
 
       &::after {
@@ -276,9 +285,13 @@
       display: block;
       transform: translate(-50%, 0);
       width: 1px;
-      height: 13px;
+      height: calc(100% + 25px);
       left: 7px;
       top: 50%;
+    }
+
+    &:last-of-type::after {
+      display: none;
     }
   }
 }

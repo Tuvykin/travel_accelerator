@@ -23,7 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
   initToursSlider();
   initTrainingSlider();
   initReviewsSlider();
-  initAdvantagesSlider();
+
+  if (document.documentElement.clientWidth > 1240) {
+    initAdvantagesSlider();
+  }
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
