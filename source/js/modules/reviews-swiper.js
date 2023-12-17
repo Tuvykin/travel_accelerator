@@ -9,16 +9,19 @@ export const initReviewsSlider = () => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
+        initialSlide: 4,
       },
       // when window width is >= 768px
       768: {
         slidesPerView: 3,
         spaceBetween: 20,
+        initialSlide: 4,
       },
       // when window width is >= 1200px
       1240: {
-        slidesPerView: 1.5,
+        slidesPerView: 2,
         spaceBetween: 120,
+        initialSlide: 1,
       },
     },
     navigation: {

@@ -77,6 +77,11 @@
   font-size: 21px;
   line-height: 21px;
   padding-bottom: 34px;
+
+  @include vp-1200 {
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
 
 .instructors br {
