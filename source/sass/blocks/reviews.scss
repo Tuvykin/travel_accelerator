@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @include vp-1200 {
+    padding: 37px 45px;
+  }
 }
 
 .reviews__wrapper {
@@ -35,7 +39,7 @@
 
 .reviews__list {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   list-style-type: none;
 }
 

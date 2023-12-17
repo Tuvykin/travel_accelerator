@@ -13,15 +13,15 @@ export const initReviewsSlider = () => {
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        initialSlide: 4,
+        slidesPerView: 1.1,
+        spaceBetween: 30,
+        initialSlide: 1.5,
       },
       // when window width is >= 1200px
       1240: {
-        slidesPerView: 2,
+        slidesPerView: 1.6,
         spaceBetween: 120,
-        initialSlide: 1,
+        initialSlide: 1.6,
       },
     },
     navigation: {
