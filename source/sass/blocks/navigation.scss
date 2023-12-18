@@ -70,19 +70,19 @@
 }
 
 .navigation__logo {
-  max-height: 62px;
+  min-width: 205px;
+  min-height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include vp-1200 {
-    max-height: 42px;
-    text-align: center;
+    min-width: 100%;
+    min-height: 42px;
   }
-}
 
-.navigation__logo svg {
-
-  @include vp-1200 {
-    width: 142px;
-    height: 42px;
+  @include vp-767 {
+    justify-content: flex-end;
   }
 }
 

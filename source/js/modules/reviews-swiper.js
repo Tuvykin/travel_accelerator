@@ -18,7 +18,7 @@ export const initReviewsSlider = () => {
         initialSlide: 1.5,
       },
       // when window width is >= 1200px
-      1240: {
+      1200: {
         slidesPerView: 1.6,
         spaceBetween: 120,
         initialSlide: 1,

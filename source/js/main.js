@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initTrainingSlider();
   initReviewsSlider();
 
-  if (document.documentElement.clientWidth > 1240) {
+  if (document.documentElement.clientWidth > 1199) {
     initAdvantagesSlider();
   }
 

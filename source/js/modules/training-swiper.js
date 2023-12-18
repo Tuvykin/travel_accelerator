@@ -18,7 +18,7 @@ export const initTrainingSlider = () => {
         initialSlide: 4,
       },
       // when window width is >= 1200px
-      1240: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 20,
         initialSlide: 4,
