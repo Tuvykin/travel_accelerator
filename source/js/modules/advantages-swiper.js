@@ -6,7 +6,7 @@ export const initAdvantagesSlider = () => {
   return new window.Swiper(swiperWrapper, {
     loop: false,
     centeredSlides: true,
-    slidesPerView: 3.6,
+    slidesPerView: 3.585,
     spaceBetween: 30,
     initialSlide: 2,
     navigation: {

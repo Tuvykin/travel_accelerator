@@ -9,11 +9,11 @@ export const initReviewsSlider = () => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        initialSlide: 4,
+        initialSlide: 1,
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 1.1,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         initialSlide: 1.5,
       },
