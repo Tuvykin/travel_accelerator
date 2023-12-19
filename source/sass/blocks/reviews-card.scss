@@ -103,6 +103,7 @@
 }
 
 .reviews-card__wrapper-image {
+  min-width: 258px;
 
   @include vp-1200 {
     min-width: 186px;
