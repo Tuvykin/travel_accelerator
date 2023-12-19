@@ -6,6 +6,7 @@ import {initToursSlider} from './modules/tours-swiper';
 import {initTrainingSlider} from './modules/training-swiper';
 import {initReviewsSlider} from './modules/reviews-swiper';
 import {initAdvantagesSlider} from './modules/advantages-swiper';
+import {initGallerySlider} from './modules/gallery-swiper';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initToursSlider();
   initTrainingSlider();
   initReviewsSlider();
+  initGallerySlider();
 
   if (document.documentElement.clientWidth > 1199) {
     initAdvantagesSlider();
