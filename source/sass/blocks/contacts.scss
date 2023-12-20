@@ -1,61 +1,29 @@
-.gallery__container {
-  padding: 0;
-  max-width: 100%;
+.contacts {
   display: flex;
-  flex-direction: column;
-  gap: 46px;
-}
-
-.gallery__text-content {
+  justify-content: space-between;
   max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  align-items: flex-end;
+}
+
+.contacts__text-content {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 50px;
+  max-width: 500px;
 }
 
-.gallery__list {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 3px;
-  list-style-type: none;
-}
-
-.gallery__item {
+.contacts__group {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  gap: 5px;
-  max-width: 100%;
-
-  &--primary-full {
-    max-width: 275px;
-  }
-
-  &--double-first {
-    min-width: 298px;
-  }
-
-  &--secondary-full {
-    max-width: 272px;
-  }
-
-  &--double-second {
-    min-width: 298px;
-  }
-
-  &--third-full {
-    max-width: 276px;
-  }
+  gap: 25px;
 }
 
-.gallery__text-content h2 {
+.contacts__text-content h2 {
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
   margin: 0;
-  padding-top: 23px;
+  padding-top: 19px;
   padding-bottom: 1px;
   position: relative;
 
@@ -97,17 +65,50 @@
   // }
 }
 
-.gallery__group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.gallery__text-content p {
-  max-width: 693px;
+.contacts__text-content p {
   margin: 0;
 }
 
-.gallery__wrapper-image img {
-  width: 100%;
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts__text-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.contacts__text-content a {
+  font-weight: 400;
+}
+
+.contacts__container-image {
+  position: relative;
+}
+
+.contacts__wrapper-marker {
+  position: absolute;
+  top: 162px;
+  right: 184px;
+  color: #0266C1;
 }
