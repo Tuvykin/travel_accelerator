@@ -160,9 +160,9 @@
 }
 
 .advantages__wrapper-image {
-  color: #0266C1;
+  color: $color-navy-blue;
   padding: 15px;
-  border: 1px solid #0266C1;
+  border: 1px solid $color-navy-blue;
   max-height: 54px;
 
   @include vp-1200 {
