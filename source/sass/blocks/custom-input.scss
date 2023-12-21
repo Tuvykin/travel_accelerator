@@ -1,10 +1,7 @@
-.custom-input,
-.custom-textarea {
+.custom-input {
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 48px;
@@ -21,17 +18,20 @@
       flex-direction: column;
     }
 
-    input,
-    textarea {
+    input {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
+      min-width: 360px;
+      max-height: 56px;
+      padding: 18px 28px;
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      border: 2px solid rgba(2, 102, 193, 0.10);
+      border-radius: 2px;
       outline: none;
+
+      color: #2D383F;
+      font-size: 16px;
+      line-height: 16px;
+
 
       transition: border 0.3s ease;
 
@@ -73,8 +73,7 @@
   }
 
   &.is-invalid {
-    input,
-    textarea {
+    input {
       border: 2px solid #ff1553;
 
       &:focus,

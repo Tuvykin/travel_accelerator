@@ -1517,7 +1517,60 @@
           </div>
         </div>
       </section>
-      <section class="form" data-test="form"></section>
+      <section class="form" data-test="form">
+        <div class="form__container container">
+          <div class="form__text-content">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+          </div>
+          <div class="form__wrapper" data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+              <fieldset class="form__group">
+                <legend class="visually-hidden">Укажите контактный телефон и электронную почту</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <div class="form__input custom-input" data-validate-type="phone" data-on-input-validate=""
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля"
+                      data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                      <label>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                        <span class="visually-hidden">Телефон</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="form__item">
+                    <div class="form__input custom-input" data-validate-type="text" data-limitation="name"
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля" data-required="">
+                      <label>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <span class="visually-hidden">Email</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="form__button btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="form__wrapper-image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/picture/form-mobile.webp 1x, img/picture/form-mobile2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/picture/form-tablet.webp 1x, img/picture/form-tablet2x.webp 2x">
+            <source type="image/webp" srcset="img/picture/form.webp 1x, img/picture/form2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/picture/form-mobile.jpg 1x, img/picture/form-mobile2x.jpg 2x"
+              width="350" height="620">
+            <source media="(max-width: 1199px)"
+              srcset="img/picture/form-tablet.jpg 1x, img/picture/form-tablet2x.jpg 2x" width="768" height="680">
+            <img src="img/picture/form.jpg" srcset="img/picture/form2x.jpg 2x" loading="lazy" alt="" width="1440"
+              height="760">
+          </picture>
+        </div>
+      </section>
     </main>
     <footer class="main-footer" data-test="footer">
       <div class="main-footer__container container">
