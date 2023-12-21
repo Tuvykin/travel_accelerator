@@ -1,12 +1,11 @@
 .instructors {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   max-width: 100%;
 
   @include vp-1200 {
-    gap: 27px;
-    padding: 0;
+    gap: 28px;
   }
 
   @include vp-767 {

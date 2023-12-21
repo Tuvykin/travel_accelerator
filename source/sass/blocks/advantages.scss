@@ -1,15 +1,14 @@
 .advantages__container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 47px;
   align-items: center;
   margin: 0;
-  padding: 42px 0 81px;
+  padding: 45px 0 81px;
   max-width: 100%;
 
   @include vp-1200 {
     padding: 47px 45px 45px;
-    gap: 47px;
   }
 
   @include vp-767 {
@@ -186,14 +185,11 @@
 
 .advantages__wrapper {
   margin: 0;
-  max-width: 1440px;
-
-  @include vp-1200 {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 .advantages__wrapper-button {
+  margin-top: 3px;
 
   @include vp-1200 {
     display: none;
@@ -220,7 +216,6 @@
 }
 
 .advantages__text-content .advantages__br-mobile-transfer {
-
 
   @include vp-1200 {
     display: none;

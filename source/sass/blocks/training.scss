@@ -1,7 +1,7 @@
 .training {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 58px;
   position: relative;
 
   @include vp-1200 {
@@ -15,13 +15,13 @@
 }
 
 .training__container {
-  padding-top: 20px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 58px;
 
   @include vp-1200 {
-    gap: 25px;
+    gap: 29px;
     padding: 45px;
     padding-top: 48px;
     padding-bottom: 0;
@@ -36,11 +36,12 @@
 .training__text-content {
   display: flex;
   flex-direction: column;
-  gap: 37px;
+  gap: 30px;
+  margin-bottom: 3px;
 
   @include vp-1200 {
     gap: 21px;
-    padding-bottom: 5px;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -65,7 +66,7 @@
     font-weight: 800;
     line-height: 55px;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     z-index: -1;
     opacity: 0.03;
   }
@@ -105,11 +106,12 @@
 .training__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 18px;
   margin-left: auto;
   max-width: 1340px;
   width: 100%;
   padding-left: 20px;
+  padding-bottom: 3px;
 
   @include vp-1200 {
     max-width: 680px;
@@ -189,7 +191,7 @@
   &::before {
     content: '';
     position: absolute;
-    bottom: 8px;
+    bottom: 5px;
     left: 10px;
     display: block;
     width: 14px;
@@ -201,7 +203,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: 14px;
+    bottom: 12px;
     left: 10px;
     display: block;
     width: 100%;
@@ -379,4 +381,8 @@
   @include vp-1200 {
     position: absolute;
   }
+}
+
+.training__wrapper-button {
+  margin-bottom: 2px;
 }
