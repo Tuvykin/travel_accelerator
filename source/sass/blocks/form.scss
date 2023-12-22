@@ -41,6 +41,13 @@
   top: 0;
 }
 
+.form__wrapper-image img {
+
+  @include vp-1200 {
+    min-height: 620px;
+  }
+}
+
 .form__text-content {
   display: flex;
   flex-direction: column;
