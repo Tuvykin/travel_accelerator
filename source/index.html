@@ -1520,6 +1520,21 @@
         </div>
       </section>
       <section class="form" data-test="form">
+        <div class="form__wrapper-image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/picture/form-mobile.webp 1x, img/picture/form-mobile2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/picture/form-tablet.webp 1x, img/picture/form-tablet2x.webp 2x">
+            <source type="image/webp" srcset="img/picture/form.webp 1x, img/picture/form2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/picture/form-mobile.jpg 1x, img/picture/form-mobile2x.jpg 2x"
+              width="350" height="620">
+            <source media="(max-width: 1199px)"
+              srcset="img/picture/form-tablet.jpg 1x, img/picture/form-tablet2x.jpg 2x" width="768" height="680">
+            <img src="img/picture/form.jpg" srcset="img/picture/form2x.jpg 2x" loading="lazy" alt="" width="1440"
+              height="760">
+          </picture>
+        </div>
         <div class="form__container container">
           <div class="form__text-content">
             <h2>Остались вопросы?</h2>
@@ -1557,84 +1572,129 @@
             </form>
           </div>
         </div>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)"
-            srcset="img/picture/form-mobile.webp 1x, img/picture/form-mobile2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1199px)"
-            srcset="img/picture/form-tablet.webp 1x, img/picture/form-tablet2x.webp 2x">
-          <source type="image/webp" srcset="img/picture/form.webp 1x, img/picture/form2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/picture/form-mobile.jpg 1x, img/picture/form-mobile2x.jpg 2x"
-            width="350" height="620">
-          <source media="(max-width: 1199px)" srcset="img/picture/form-tablet.jpg 1x, img/picture/form-tablet2x.jpg 2x"
-            width="768" height="680">
-          <img src="img/picture/form.jpg" srcset="img/picture/form2x.jpg 2x" loading="lazy" alt="" width="1440"
-            height="760">
-        </picture>
       </section>
     </main>
     <footer class="main-footer" data-test="footer">
-      <div class="main-footer__container container">
-        <section class="main-footer__contacts contacts" id="contacts">
-          <div class="contacts__text-content">
-            <div class="contacts__group">
-              <h2 data-title="Контакты">Контакты</h2>
-              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
-                увлекательными
-                историями и подобрать для вас тур.</p>
-            </div>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <div class="contacts__wrapper">
-                  <h3>Телефон</h3>
-                  <a href="tel:+79837454545">+7 983 745-45-45</a>
-                </div>
-                <svg width="26" height="26">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
+      <section class="main-footer__contacts contacts" id="contacts">
+        <div class="contacts__text-content">
+          <div class="contacts__group">
+            <h2 data-title="Контакты">Контакты</h2>
+            <p>Свяжитесь с нами любым удобным<br> для вас способом или&nbsp;приходите<br> к нам в гости. Мы будем рады
+              поделиться
+              увлекательными
+              историями и подобрать для вас тур.</p>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__wrapper">
+                <h3>Телефон</h3>
+                <a href="tel:+79837454545">+7 983 745-45-45</a>
+              </div>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__wrapper">
+                <h3>Email</h3>
+                <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </div>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__wrapper">
+                <h3>Адрес</h3>
+                <a href="#">г. Москва, пр-т Мира,<br> д. 14, офис 101</a>
+              </div>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__container-image">
+          <div class="contacts__wrapper-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/picture/map-mobile.webp 1x, img/picture/map-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/picture/map-tablet.webp 1x, img/picture/map-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/picture/map.webp 1x, img/picture/map2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/picture/map-mobile.jpg 1x, img/picture/map-mobile2x.jpg 2x"
+                width="350" height="320">
+              <source media="(max-width: 1199px)"
+                srcset="img/picture/map-tablet.jpg 1x, img/picture/map-tablet2x.jpg 2x" width="768" height="340">
+              <img src="img/picture/map.jpg" srcset="img/picture/map2x.jpg 2x" loading="lazy"
+                alt="Наше местоположение на карте" width="585" height="324">
+            </picture>
+          </div>
+          <div class="contacts__wrapper-marker">
+            <svg width=" 48" height="48">
+              <use xlink:href="img/sprite.svg#icon-marker"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__container container">
+          <div class="main-footer__navigation footer-nav">
+            <a class="footer-nav__logo" aria-current="page">
+              <svg width="142" height="42">
+                <use xlink:href="img/sprite.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#tours">Туры</a>
               </li>
-              <li class="contacts__item">
-                <div class="contacts__wrapper">
-                  <h3>Email</h3>
-                  <a href="mailto:info@lifetour.com">info@lifetour.com</a>
-                </div>
-                <svg width="26" height="26">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
+              <li class="footer-nav__item footer-nav__item--education">
+                <a class="footer-nav__link" href="#training">Обучение</a>
               </li>
-              <li class="contacts__item">
-                <div class="contacts__wrapper">
-                  <h3>Адрес</h3>
-                  <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
-                </div>
-                <svg width="26" height="26">
-                  <use xlink:href="img/sprite.svg#icon-map"></use>
-                </svg>
+              <li class="footer-nav__item footer-nav__item--about">
+                <a class="footer-nav__link" href="#about">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#contacts">Контакты</a>
               </li>
             </ul>
+            <a class="footer-nav__phone" href="tel:+78007253232">8 800 725-32-32</a>
           </div>
-          <div class="contacts__container-image">
-            <div class="contacts__wrapper-image">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/picture/map-mobile.webp 1x, img/picture/map-mobile2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="img/picture/map-tablet.webp 1x, img/picture/map-tablet2x.webp 2x">
-                <source type="image/webp" srcset="img/picture/map.webp 1x, img/picture/map2x.webp 2x">
-                <source media="(max-width: 767px)"
-                  srcset="img/picture/map-mobile.jpg 1x, img/picture/map-mobile2x.jpg 2x" width="350" height="320">
-                <source media="(max-width: 1199px)"
-                  srcset="img/picture/map-tablet.jpg 1x, img/picture/map-tablet2x.jpg 2x" width="768" height="340">
-                <img src="img/picture/map.jpg" srcset="img/picture/map2x.jpg 2x" loading="lazy"
-                  alt="Наше местоположение на карте" width="585" height="324">
-              </picture>
-            </div>
-            <div class="contacts__wrapper-marker">
-              <svg width=" 48" height="48">
-                <use xlink:href="img/sprite.svg#icon-marker"></use>
-              </svg>
-            </div>
-          </div>
-        </section>
+          <ul class="main-footer__list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Reddit</span>
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="main-footer__link" href="#">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
   </div>

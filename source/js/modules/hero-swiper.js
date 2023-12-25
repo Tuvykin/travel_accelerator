@@ -3,6 +3,7 @@ export const initHeroSlider = () => {
 
   return new window.Swiper(swiperWrapper, {
     loop: true,
+    grabCursor: true,
     pagination: {
       el: '[data-swiper-hero-pagination]',
       clickable: true,

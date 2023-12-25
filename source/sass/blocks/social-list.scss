@@ -1,0 +1,19 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  max-height: 30px;
+
+  @include vp-1200 {
+    gap: 16px;
+  }
+}
+
+.social-list__link svg {
+
+  @include vp-1200 {
+    width: 32px;
+  }
+}
