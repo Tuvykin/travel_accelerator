@@ -128,24 +128,30 @@
 }
 
 .contacts__item {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 26px auto;
   gap: 30px;
   align-items: center;
 
   @include vp-1200 {
-    align-items: flex-start;
+    grid-template-columns: 24px auto;
     gap: 10px;
     min-width: max-content;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 22px auto;
   }
 }
 
 .contacts__item svg {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 
   @include vp-1200 {
     width: 24px;
     height: 24px;
+    align-self: baseline;
   }
 
   @include vp-767 {

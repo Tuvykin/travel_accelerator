@@ -59,10 +59,12 @@
   padding: 0;
   list-style-type: none;
   max-width: 100%;
+  align-items: stretch;
 }
 
 .tours__item {
   position: relative;
+  height: auto;
 }
 
 .tours__wrapper {
