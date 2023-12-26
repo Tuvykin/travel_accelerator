@@ -1,3 +1,11 @@
+.advantages {
+  position: relative;
+
+  @include vp-1200 {
+    overflow: hidden;
+  }
+}
+
 .advantages__container {
   display: flex;
   flex-direction: column;
@@ -90,6 +98,7 @@
   border: 1px solid rgba(2, 102, 193, 0.10);
   height: auto;
   justify-content: flex-end;
+  background-color: $color-default-white;
 
   @include vp-1200 {
     padding: 29px 19px;
@@ -229,3 +238,13 @@
   }
 }
 
+.advantages__wrapper-clouds-left {
+  position: absolute;
+  z-index: -2;
+  top: -125px;
+
+  @include vp-1200 {
+    top: 215px;
+    left: -120px;
+  }
+}
