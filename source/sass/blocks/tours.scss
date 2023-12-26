@@ -119,6 +119,21 @@
     line-height: 14px;
     letter-spacing: 0.56px;
   }
+
+  @include hover-focus {
+    color: #1C3374;
+    outline: none;
+  }
+
+  @include active {
+    color: #0266C1;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: #0266C1;
+    pointer-events: none;
+  }
 }
 
 .tours__wrapper-slider {

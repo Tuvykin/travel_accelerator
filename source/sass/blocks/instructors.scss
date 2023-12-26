@@ -108,3 +108,34 @@
     width: 100%;
   }
 }
+
+.instructors__link {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border: 1px solid rgba(45, 56, 63, 0.2);
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::before {
+      border-color: #2D383F;
+    }
+  }
+
+  // @include active {
+  //   color: #0266C1;
+  // }
+
+  // &:disabled,
+  // &--disabled {
+  //   color: #0266C1;
+  //   pointer-events: none;
+  // }
+}
