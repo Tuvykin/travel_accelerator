@@ -15,7 +15,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 21px;
   min-width: 800px;
   flex-wrap: wrap;
 
@@ -74,11 +74,28 @@
   @include vp-1200 {
     display: none;
   }
+
+  @include hover-focus {
+    color: #1C3374;
+    outline: none;
+  }
+
+  @include active {
+    color: #0266C1;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: #0266C1;
+    pointer-events: none;
+  }
 }
 
 .footer-nav__link {
   line-height: 16px;
   max-height: 16px;
+  padding: 2px 4px 3px;
+  border: 1px solid $color-transparent;
 
   @include vp-1200 {
     font-size: 14px;
@@ -92,5 +109,24 @@
     min-width: 120px;
     display: block;
     text-align: center;
+  }
+
+  @include hover {
+    border-bottom: 1px solid #2D383F;
+  }
+
+  @include focus {
+    border-color: #2D383F;
+    outline: none;
+  }
+
+  @include active {
+    border-color: $color-transparent;
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: $color-transparent;
+    pointer-events: none;
   }
 }

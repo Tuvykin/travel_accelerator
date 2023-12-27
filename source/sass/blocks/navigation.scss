@@ -34,7 +34,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 21px;
   min-width: 652px;
   max-width: 760px;
 
@@ -43,14 +43,31 @@
   }
 }
 
-.navigation__item {
-  max-height: 16px;
-}
-
 .navigation__link {
   color: $color-default-white;
   line-height: 16px;
   display: block;
+  padding: 2px 4px 3px;
+  border: 1px solid $color-transparent;
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    border-color: $color-default-white;
+    outline: none;
+  }
+
+  @include active {
+    border-color: $color-transparent;
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: $color-transparent;
+    pointer-events: none;
+  }
 }
 
 .navigation__phone {

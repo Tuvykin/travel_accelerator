@@ -202,6 +202,22 @@
   @include vp-767 {
     line-height: 20px;
   }
+
+  @include hover-focus {
+    color: #1C3374;
+    outline: none;
+  }
+
+  @include active {
+    color: #0266C1;
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .contacts__container-image {

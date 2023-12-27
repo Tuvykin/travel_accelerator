@@ -45,6 +45,25 @@
     width: 8px;
     height: 8px;
   }
+
+  @include hover {
+    background-color: #D9D9D9;
+  }
+
+  @include focus {
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 1px;
+  }
+
+  @include active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  // &:disabled,
+  // &--disabled {
+  //   color: #0266C1;
+  //   pointer-events: none;
+  // }
 }
 
 .hero-pagination .swiper-pagination-bullet-active {

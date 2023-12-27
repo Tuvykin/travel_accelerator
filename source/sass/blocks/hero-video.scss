@@ -63,7 +63,7 @@
 
   &::after {
     content: '';
-    border: 1px solid #fff;
+    border: 1px solid $color-default-white;
     width: 56px;
     height: 56px;
     display: block;
@@ -72,6 +72,45 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      border-color: #1C3374;
+    }
+
+    & svg {
+      stroke: $color-default-black;
+    }
+  }
+
+  @include active {
+
+    &::after {
+      border-color: #1C3374;
+      background-color: #1C3374;
+      z-index: -1;
+    }
+
+    & svg {
+      stroke: $color-default-white;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+
+    &::after {
+      border-color: rgba(2, 102, 193, 0.1);
+    }
+
+    & svg {
+      stroke: #0266C1;
+      color: #0266C1;
+    }
   }
 }
 

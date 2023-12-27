@@ -51,6 +51,21 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
+
+  @include hover-focus {
+    color: #1C3374;
+    outline: none;
+  }
+
+  @include active {
+    color: #0266C1;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: #0266C1;
+    pointer-events: none;
+  }
 }
 
 .main-footer__container {
