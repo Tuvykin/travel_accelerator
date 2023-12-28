@@ -31,14 +31,14 @@
     <header class="main-header" data-test="hero">
       <div class="main-header__container container">
         <nav class="navigation" data-navigation>
-          <button class="navigation__toogle btn" type="button" data-navigation-toogle>
-            <div class="navigation__button-wrapper">
+          <button class="navigation__toogle navigation__toogle--closed btn" type="button" data-navigation-toogle>
+            <div class="navigation__wrapper-icon navigation__wrapper-icon--opened">
               <span class="visually-hidden">Меню</span>
               <svg width="26" height="26">
                 <use xlink:href="img/sprite.svg#icon-menu"></use>
               </svg>
             </div>
-            <div class="navigation__button-wrapper navigation__button-wrapper--closed">
+            <div class="navigation__wrapper-icon navigation__wrapper-icon--closed">
               <span class="visually-hidden">Закрыть меню</span>
               <svg width="26" height="26">
                 <use xlink:href="img/sprite.svg#icon-closed"></use>
@@ -52,22 +52,22 @@
           </a>
           <ul class="navigation__list navigation__list--closed" data-navigation-list>
             <li class="navigation__item">
-              <a class="navigation__link" href="#tours">Туры</a>
+              <a class="navigation__link" href="#tours" data-navigation-link>Туры</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#training">Обучение</a>
+              <a class="navigation__link" href="#training" data-navigation-link>Обучение</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#about">О нас</a>
+              <a class="navigation__link" href="#about" data-navigation-link>О нас</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#reviews">Отзывы</a>
+              <a class="navigation__link" href="#reviews" data-navigation-link>Отзывы</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#gallery">Фотографии</a>
+              <a class="navigation__link" href="#gallery" data-navigation-link>Фотографии</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#contacts">Контакты</a>
+              <a class="navigation__link" href="#contacts" data-navigation-link>Контакты</a>
             </li>
           </ul>
           <a class="navigation__phone" href="tel:+78007253232">8 800 725-32-32</a>
