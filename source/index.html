@@ -30,19 +30,27 @@
   <div class="wrapper">
     <header class="main-header" data-test="hero">
       <div class="main-header__container container">
-        <nav class="navigation">
-          <button class="navigation__toogle btn" type="button">
-            <span class="visually-hidden">Меню</span>
-            <svg width="26" height="26">
-              <use xlink:href="img/sprite.svg#icon-menu"></use>
-            </svg>
+        <nav class="navigation" data-navigation>
+          <button class="navigation__toogle btn" type="button" data-navigation-toogle>
+            <div class="navigation__button-wrapper">
+              <span class="visually-hidden">Меню</span>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+            </div>
+            <div class="navigation__button-wrapper navigation__button-wrapper--closed">
+              <span class="visually-hidden">Закрыть меню</span>
+              <svg width="26" height="26">
+                <use xlink:href="img/sprite.svg#icon-closed"></use>
+              </svg>
+            </div>
           </button>
           <a class="navigation__logo logo" href="#" aria-current="page">
             <svg width="142" height="42">
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
-          <ul class="navigation__list">
+          <ul class="navigation__list navigation__list--closed" data-navigation-list>
             <li class="navigation__item">
               <a class="navigation__link" href="#tours">Туры</a>
             </li>

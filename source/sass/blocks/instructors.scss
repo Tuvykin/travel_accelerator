@@ -111,6 +111,7 @@
 
 .instructors__link {
   position: relative;
+  max-height: 24px;
 
   &::before {
     content: '';
@@ -129,13 +130,23 @@
     }
   }
 
-  // @include active {
-  //   color: #0266C1;
-  // }
+  @include active {
+    color: $color-default-white;
 
-  // &:disabled,
-  // &--disabled {
-  //   color: #0266C1;
-  //   pointer-events: none;
-  // }
+    &::before {
+      border-color: #0266C1;
+      background-color: #0266C1;
+      z-index: -1;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(45, 56, 63, 0.2);
+    pointer-events: none;
+
+    &::before {
+      border-color: rgba(45, 56, 63, 0.2);
+    }
+  }
 }

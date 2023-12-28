@@ -11,9 +11,61 @@
   }
 }
 
+.social-list__link {
+  position: relative;
+  min-width: 30px;
+  max-height: 30px;
+  display: block;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid rgba(45, 56, 63, 0.2);
+  }
+
+  @include vp-1200 {
+    min-width: 32px;
+
+    &::before {
+      width: 32px;
+    }
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::before {
+      border-color: #2D383F;
+    }
+  }
+
+  @include active {
+    color: $color-default-white;
+
+    &::before {
+      border-color: #0266C1;
+      background-color: #0266C1;
+      z-index: -1;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(45, 56, 63, 0.2);
+    pointer-events: none;
+
+    &::before {
+      border-color: rgba(45, 56, 63, 0.2);
+    }
+  }
+}
+
 .social-list__link svg {
 
   @include vp-1200 {
-    width: 32px;
+    min-width: 32px;
   }
 }

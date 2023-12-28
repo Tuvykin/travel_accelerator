@@ -7,6 +7,7 @@ import {initTrainingSlider} from './modules/training-swiper';
 import {initReviewsSlider} from './modules/reviews-swiper';
 import {initAdvantagesSlider} from './modules/advantages-swiper';
 import {initGallerySlider} from './modules/gallery-swiper';
+import {setNavToggle} from './modules/burger-menu';
 
 // ---------------------------------
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAdvantagesSlider();
   }
   initGallerySlider();
+  setNavToggle();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
