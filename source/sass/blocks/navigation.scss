@@ -134,7 +134,7 @@
 
   &:disabled,
   &--disabled {
-    opacity: 0.3;
+    color: $color-default-white;
     pointer-events: none;
   }
 }
