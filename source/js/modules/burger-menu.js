@@ -15,7 +15,6 @@ function onNavToggleClick() {
     nav.classList.remove('navigation--closed');
     nav.classList.add('navigation--opened');
 
-
     button.classList.add('navigation__toogle--opened');
     buttonOpen.setAttribute('display', 'none');
 
