@@ -5,13 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Описание проекта">
+  <meta name="description" content="Путешествие по прекрасным местам">
   <title>travel_accelerator</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Фавиконки -->
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <!-- Шрифты -->
+  <link rel="preload" href="fonts/MontserratBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MontserratExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MontserratLight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MontserratMedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MontserratSemiBold.woff2" as="font" crossorigin="anonymous">
+  <!-- Предзагрузка -->
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/vendor.min.js" as="script">
+  <link rel="preload" href="js/main.min.js" as="script">
 </head>
 
 <body>
@@ -25,7 +37,7 @@
               <use xlink:href="img/sprite.svg#icon-menu"></use>
             </svg>
           </button>
-          <a class="navigation__logo" href="#" aria-current="page">
+          <a class="navigation__logo logo" href="#" aria-current="page">
             <svg width="142" height="42">
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
@@ -1665,7 +1677,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__container container">
           <div class="main-footer__navigation footer-nav">
-            <a class="footer-nav__logo" href="#hero" aria-current="page">
+            <a class="footer-nav__logo logo" href="#hero" aria-current="page">
               <svg width="142" height="42">
                 <use xlink:href="img/sprite.svg#icon-logo"></use>
               </svg>

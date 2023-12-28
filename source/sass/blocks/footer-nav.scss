@@ -21,7 +21,7 @@
 
   @include vp-1200 {
     min-width: 536px;
-    gap: 20px;
+    gap: 13px;
     justify-content: flex-end;
   }
 
@@ -51,22 +51,13 @@
 }
 
 .footer-nav__logo {
-  color: #2D383F;
   min-width: 200px;
   min-height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #2D383F;
 
   @include vp-1200 {
     min-width: 142px;
     min-height: 100%;
-  }
-
-  @include hover-focus {
-    color: #1C3374;
-    outline: none;
-    cursor: pointer;
   }
 
   @include active {
@@ -76,7 +67,6 @@
   &:disabled,
   &--disabled {
     color: #0266C1;
-    pointer-events: none;
   }
 }
 
