@@ -1,9 +1,10 @@
 const nav = document.querySelector('[data-navigation]');
 const navList = nav.querySelector('[data-navigation-list]');
-const navToggle = nav.querySelector('[data-navigation-toogle]');
+const button = nav.querySelector('[data-navigation-toogle]');
 const navLink = nav.querySelectorAll('[data-navigation-link]');
 const bodyElement = document.querySelector('body');
-const hero = document.querySelector('.hero');
+const hero = document.querySelector('[data-hero]');
+const buttonOpen = nav.querySelector('[data-button-opened]');
 
 
 function onNavToggleClick() {
@@ -14,8 +15,9 @@ function onNavToggleClick() {
     nav.classList.remove('navigation--closed');
     nav.classList.add('navigation--opened');
 
-    navToggle.classList.remove('navigation__toogle--closed');
-    navToggle.classList.add('navigation__toogle--opened');
+
+    button.classList.add('navigation__toogle--opened');
+    buttonOpen.setAttribute('display', 'none');
 
     bodyElement.classList.add('menu-opened');
     hero.classList.add('hero-menu');
@@ -26,8 +28,8 @@ function onNavToggleClick() {
     nav.classList.remove('navigation--opened');
     nav.classList.add('navigation--closed');
 
-    navToggle.classList.remove('navigation__toogle--opened');
-    navToggle.classList.add('navigation__toogle--closed');
+    button.classList.remove('navigation__toogle--opened');
+    buttonOpen.removeAttribute('display', 'none');
 
     bodyElement.classList.remove('menu-opened');
     hero.classList.remove('hero-menu');
@@ -35,7 +37,7 @@ function onNavToggleClick() {
 }
 
 const setNavToggle = () => {
-  navToggle.addEventListener('click', onNavToggleClick);
+  button.addEventListener('click', onNavToggleClick);
 };
 
 const onNavLinkClick = () => {
@@ -43,7 +45,6 @@ const onNavLinkClick = () => {
 };
 
 function setNavLinkClick() {
-
   navLink.forEach((link) => {
     link.addEventListener('click', onNavLinkClick);
   });

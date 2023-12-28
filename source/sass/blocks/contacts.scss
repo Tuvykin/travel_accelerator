@@ -131,7 +131,6 @@
   display: grid;
   grid-template-columns: 26px auto;
   gap: 30px;
-  align-items: center;
 
   @include vp-1200 {
     grid-template-columns: 24px auto;
@@ -147,6 +146,7 @@
 .contacts__item svg {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  align-self: center;
 
   @include vp-1200 {
     width: 24px;

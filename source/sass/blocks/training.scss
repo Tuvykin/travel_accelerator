@@ -274,7 +274,6 @@
   @include vp-767 {
     padding: 0;
     padding-left: 29px;
-    align-items: center;
     display: grid;
     grid-template-columns: 21px 1fr;
     column-gap: 13px;
@@ -305,6 +304,7 @@
   @include vp-767 {
     width: 21px;
     height: 19px;
+    align-self: center;
   }
 }
 

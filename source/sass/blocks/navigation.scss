@@ -30,8 +30,6 @@
     padding-bottom: 13px;
     grid-template-columns: min-content 1fr;
     row-gap: 16px;
-    justify-items: end;
-    align-items: start;
 
     &--opened {
       padding-bottom: 50px;
@@ -194,10 +192,15 @@
   @include vp-1200 {
     display: block;
     text-align: left;
+
+    &--closed {
+      display: none;
+    }
   }
 
   @include vp-767 {
     grid-row: 1 / 3;
+   align-self: start;
   }
 
   @include hover-focus {
@@ -217,11 +220,10 @@
   }
 }
 
-.navigation__toogle--closed .navigation__wrapper-icon--closed,
-.navigation__toogle--opened .navigation__wrapper-icon--opened {
+.navigation__toogle svg[data-button-closed] {
   display: none;
 }
 
-.navigation__toogle--opened .navigation__wrapper-icon--closed {
+.navigation__toogle--opened svg[data-button-closed] {
   display: block;
 }

@@ -29,21 +29,16 @@
 <body>
   <div class="wrapper">
     <header class="main-header" data-test="hero">
+      <h1 class="visually-hidden">Путешествия</h1>
       <div class="main-header__container container">
         <nav class="navigation" data-navigation>
-          <button class="navigation__toogle navigation__toogle--closed btn" type="button" data-navigation-toogle>
-            <div class="navigation__wrapper-icon navigation__wrapper-icon--opened">
-              <span class="visually-hidden">Меню</span>
-              <svg width="26" height="26">
-                <use xlink:href="img/sprite.svg#icon-menu"></use>
-              </svg>
-            </div>
-            <div class="navigation__wrapper-icon navigation__wrapper-icon--closed">
-              <span class="visually-hidden">Закрыть меню</span>
-              <svg width="26" height="26">
-                <use xlink:href="img/sprite.svg#icon-closed"></use>
-              </svg>
-            </div>
+          <button class="navigation__toogle btn" type="button" data-navigation-toogle>
+            <svg width="26" height="26" data-button-opened>
+              <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+            <svg width="26" height="26" data-button-closed>
+              <use xlink:href="img/sprite.svg#icon-closed"></use>
+            </svg>
           </button>
           <a class="navigation__logo logo" href="#" aria-current="page">
             <svg width="142" height="42">
@@ -73,7 +68,7 @@
           <a class="navigation__phone" href="tel:+78007253232">8 800 725-32-32</a>
         </nav>
       </div>
-      <section class="hero" id="hero">
+      <section class="hero" id="hero" data-hero>
         <div class="container hero__container">
           <div class="hero__swiper swiper" data-hero-swiper>
             <ul class="hero__list swiper-wrapper">
@@ -285,7 +280,6 @@
       </section>
     </header>
     <main>
-      <h1 class="visually-hidden">Путешествия</h1>
       <section class="tours" id="tours" data-test="tours">
         <div class="tours__container container">
           <div class="tours__wrapper-slider">
@@ -1143,15 +1137,16 @@
                     <p>Осенью ходили в поход на Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы —
                       настоящие
                       эксперты
-                      — всему научили, все&nbsp;показали.&nbspДелились увлекательными историями&nbspо&nbspместах, людях,
+                      — всему научили, все&nbsp;показали.&nbsp;Делились увлекательными историями&nbsp;о&nbsp;местах,
+                      людях,
                       культуре
                       места.
                     </p>
                     <p>
-                      С уверенностью могу сказать, что жизнь разделилась&nbspна до этого и после. Ещё&nbsp;никогда
-                      не&nbspотдыхал
+                      С уверенностью могу сказать, что жизнь разделилась&nbsp;на до этого и после. Ещё&nbsp;никогда
+                      не&nbsp;отдыхал
                       так
-                      душой и&nbsp;телом.&nbspВсем
+                      душой и&nbsp;телом.&nbsp;Всем
                       очень рекомендую!</p>
                   </div>
                 </div>
@@ -1181,7 +1176,7 @@
                     <span>25 лет, Владивосток</span>
                   </div>
                   <div class="reviews-card__wrapper-text">
-                    <p>Хороший полноценный поход с&nbspразнообразными локациями. В начале дорога&nbspидёт по лыжне,
+                    <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В начале дорога&nbsp;идёт по лыжне,
                       далее
                       прошли
                       мимо
@@ -1402,7 +1397,7 @@
           <div class="gallery__text-content">
             <h2 data-title="Фотогалерея">Фотогалерея</h2>
             <div class="gallery__group">
-              <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а&nbspтакже отмечайте нас на фото.
+              <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а&nbsp;также отмечайте нас на фото.
                 Лучшие фотографии украсят этот раздел нашего сайта.</p>
               <div class="gallery__wrapper-button slider-button">
                 <button class="slider-button__button slider-button__button--prev btn swiper-button-prev" type="button"
